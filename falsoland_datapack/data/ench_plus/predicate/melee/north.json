@@ -1,0 +1,25 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "ench_ambush_looks": {
+          "min": 166,
+          "max": 180
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "ench_ambush_looks": {
+          "min": -180,
+          "max": -166
+        }
+      }
+    }
+  ]
+}

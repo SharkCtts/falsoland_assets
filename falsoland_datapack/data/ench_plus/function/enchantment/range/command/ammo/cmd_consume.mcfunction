@@ -1,0 +1,1 @@
+$item modify entity @s container.$(slot) ench_plus:range/command_consume

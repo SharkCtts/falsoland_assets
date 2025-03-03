@@ -1,0 +1,140 @@
+{
+  "description": [
+    [
+      "",
+	  {
+        "text": "| ",
+        "color": "gold",
+        "italic": false,
+        "bold": true
+      },
+      {
+        "translate": "ench_plus.anger_mode.name",
+        "color": "yellow",
+        "bold": false
+      },
+      {
+        "translate": "ench_plus.anger_mode.lore",
+        "fallback": " ",
+        "color": "white"
+      }
+    ]
+  ],
+  "supported_items": "#ench_plus:axe",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 2147483647,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "lib_marked:verify_entity"
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "#lib_marked:can_be_marked"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "lib.marked": {
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "is_direct": true
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "type": "minecraft:player"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "ench_plus:enchantment/melee/angermode/plus_victim"
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lib.marked": {
+                  "min": 1,
+                  "max": 2147483647
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Health:0.0f}"
+              }
+            },
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "is_direct": true
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "type": "minecraft:player"
+              }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.anger_mode"
+              },
+              "range": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

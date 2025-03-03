@@ -1,0 +1,125 @@
+{
+  "description": [
+    [
+      "",
+	  {
+        "text": "| ",
+        "color": "gold",
+        "italic": false,
+        "bold": true
+      },
+      {
+        "translate": "ench_plus.shulker_boo.name",
+        "color": "yellow",
+        "bold": false
+      },
+      {
+        "translate": "ench_plus.shulker_boo.lore",
+        "fallback": " ",
+        "color": "white"
+      }
+    ]
+  ],
+  "supported_items": "#ench_plus:range",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 2147483647,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:end_rod"
+          },
+          "horizontal_position": {
+            "type": "in_bounding_box",
+            "scale": 1
+          },
+          "vertical_position": {
+            "type": "in_bounding_box",
+            "scale": 1
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {},
+          "speed": 1
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "attacker",
+              "scores": {
+                "ench_shulkerboo_status": {
+                  "min": 2,
+                  "max": 2147483647
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "type": "minecraft:player"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "ench_plus:enchantment/range/shulker_boo/bye_plus"
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "attacker",
+              "scores": {
+                "ench_shulkerboo_status": {
+                  "min": 3,
+                  "max": 2147483647
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "type": "minecraft:player"
+              }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.shulker_boo"
+              },
+              "range": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1141 @@
+{
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/archer_pottery_sherd"
+    },
+    "entries": [
+      {
+        "threshold": 1,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:range_dispatch",
+              "property": "minecraft:damage",
+              "normalize": true,
+              "entries": [
+                {
+                  "threshold": 0,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/0"
+                  }
+                },
+                {
+                  "threshold": 0.05,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/5"
+                  }
+                },
+                {
+                  "threshold": 0.10,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/10"
+                  }
+                },
+                {
+                  "threshold": 0.15,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/15"
+                  }
+                },
+                {
+                  "threshold": 0.20,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/20"
+                  }
+                },
+                {
+                  "threshold": 0.25,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/25"
+                  }
+                },
+                {
+                  "threshold": 0.30,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/30"
+                  }
+                },
+                {
+                  "threshold": 0.35,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/35"
+                  }
+                },
+                {
+                  "threshold": 0.40,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/40"
+                  }
+                },
+                {
+                  "threshold": 0.45,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/45"
+                  }
+                },
+                {
+                  "threshold": 0.50,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/50"
+                  }
+                },
+                {
+                  "threshold": 0.55,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/55"
+                  }
+                },
+                {
+                  "threshold": 0.60,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/60"
+                  }
+                },
+                {
+                  "threshold": 0.65,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/65"
+                  }
+                },
+                {
+                  "threshold": 0.70,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/70"
+                  }
+                },
+                {
+                  "threshold": 0.75,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/75"
+                  }
+                },
+                {
+                  "threshold": 0.80,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/80"
+                  }
+                },
+                {
+                  "threshold": 0.85,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/85"
+                  }
+                },
+                {
+                  "threshold": 0.90,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/90"
+                  }
+                },
+                {
+                  "threshold": 0.95,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/95"
+                  }
+                },
+                {
+                  "threshold": 1,
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "minecraft:item/arcade_displays/visible_countdown/100"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:range_dispatch",
+              "property": "minecraft:damage",
+              "normalize": false,
+              "scale": 1,
+              "entries": [
+                {"threshold":0,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/0"}},
+				{"threshold":1,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/1"}},
+				{"threshold":2,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/2"}},
+				{"threshold":3,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/3"}},
+				{"threshold":4,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/4"}},
+				{"threshold":5,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/5"}},
+				{"threshold":6,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/6"}},
+				{"threshold":7,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/7"}},
+				{"threshold":8,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/8"}},
+				{"threshold":9,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/9"}},
+				{"threshold":10,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/10"}},
+				{"threshold":11,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/11"}},
+				{"threshold":12,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/12"}},
+				{"threshold":13,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/13"}},
+				{"threshold":14,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/14"}},
+				{"threshold":15,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/15"}},
+				{"threshold":16,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/16"}},
+				{"threshold":17,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/17"}},
+				{"threshold":18,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/18"}},
+				{"threshold":19,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/19"}},
+				{"threshold":20,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/20"}},
+				{"threshold":21,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/21"}},
+				{"threshold":22,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/22"}},
+				{"threshold":23,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/23"}},
+				{"threshold":24,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/24"}},
+				{"threshold":25,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/25"}},
+				{"threshold":26,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/26"}},
+				{"threshold":27,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/27"}},
+				{"threshold":28,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/28"}},
+				{"threshold":29,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/29"}},
+				{"threshold":30,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/30"}},
+				{"threshold":31,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/31"}},
+				{"threshold":32,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/32"}},
+				{"threshold":33,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/33"}},
+				{"threshold":34,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/34"}},
+				{"threshold":35,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/35"}},
+				{"threshold":36,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/36"}},
+				{"threshold":37,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/37"}},
+				{"threshold":38,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/38"}},
+				{"threshold":39,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/39"}},
+				{"threshold":40,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/40"}},
+				{"threshold":41,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/41"}},
+				{"threshold":42,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/42"}},
+				{"threshold":43,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/43"}},
+				{"threshold":44,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/44"}},
+				{"threshold":45,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/45"}},
+				{"threshold":46,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/46"}},
+				{"threshold":47,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/47"}},
+				{"threshold":48,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/48"}},
+				{"threshold":49,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/49"}},
+				{"threshold":50,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/50"}},
+				{"threshold":51,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/51"}},
+				{"threshold":52,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/52"}},
+				{"threshold":53,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/53"}},
+				{"threshold":54,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/54"}},
+				{"threshold":55,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/55"}},
+				{"threshold":56,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/56"}},
+				{"threshold":57,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/57"}},
+				{"threshold":58,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/58"}},
+				{"threshold":59,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/59"}},
+				{"threshold":60,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/60"}},
+				{"threshold":120,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/120"}},
+				{"threshold":180,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/180"}},
+				{"threshold":240,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/240"}},
+				{"threshold":300,"model":{"type":"minecraft:model","model":"minecraft:item/arcade_displays/visible_countdown/string/300"}}
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "minecraft:range_dispatch",
+          "property": "minecraft:damage",
+          "normalize": true,
+          "entries": [
+            {
+              "threshold": 0,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/29"
+              }
+            },
+            {
+              "threshold": 0.034,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/28"
+              }
+            },
+            {
+              "threshold": 0.068,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/27"
+              }
+            },
+            {
+              "threshold": 0.102,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/26"
+              }
+            },
+            {
+              "threshold": 0.136,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/25"
+              }
+            },
+            {
+              "threshold": 0.17,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/24"
+              }
+            },
+            {
+              "threshold": 0.204,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/23"
+              }
+            },
+            {
+              "threshold": 0.238,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/22"
+              }
+            },
+            {
+              "threshold": 0.272,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/21"
+              }
+            },
+            {
+              "threshold": 0.306,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/20"
+              }
+            },
+            {
+              "threshold": 0.34,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/19"
+              }
+            },
+            {
+              "threshold": 0.374,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/18"
+              }
+            },
+            {
+              "threshold": 0.408,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/17"
+              }
+            },
+            {
+              "threshold": 0.442,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/16"
+              }
+            },
+            {
+              "threshold": 0.51,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/15"
+              }
+            },
+            {
+              "threshold": 0.554,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/14"
+              }
+            },
+            {
+              "threshold": 0.578,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/13"
+              }
+            },
+            {
+              "threshold": 0.612,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/12"
+              }
+            },
+            {
+              "threshold": 0.646,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/11"
+              }
+            },
+            {
+              "threshold": 0.68,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/10"
+              }
+            },
+            {
+              "threshold": 0.714,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/9"
+              }
+            },
+            {
+              "threshold": 0.748,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/8"
+              }
+            },
+            {
+              "threshold": 0.782,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/7"
+              }
+            },
+            {
+              "threshold": 0.816,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/6"
+              }
+            },
+            {
+              "threshold": 0.85,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/5"
+              }
+            },
+            {
+              "threshold": 0.884,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/4"
+              }
+            },
+            {
+              "threshold": 0.918,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/3"
+              }
+            },
+            {
+              "threshold": 0.952,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/2"
+              }
+            },
+            {
+              "threshold": 0.986,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/1"
+              }
+            },
+            {
+              "threshold": 1,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/0"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 3,
+        "model": {
+          "type": "minecraft:range_dispatch",
+          "property": "minecraft:damage",
+          "normalize": false,
+          "entries": [
+            {
+              "threshold": 0,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/0"
+              }
+            },
+            {
+              "threshold": 1,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/1"
+              }
+            },
+            {
+              "threshold": 2,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/2"
+              }
+            },
+            {
+              "threshold": 3,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/3"
+              }
+            },
+            {
+              "threshold": 4,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/4"
+              }
+            },
+            {
+              "threshold": 5,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/5"
+              }
+            },
+            {
+              "threshold": 6,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/6"
+              }
+            },
+            {
+              "threshold": 7,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/7"
+              }
+            },
+            {
+              "threshold": 8,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/8"
+              }
+            },
+            {
+              "threshold": 9,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/9"
+              }
+            },
+            {
+              "threshold": 10,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/10"
+              }
+            },
+            {
+              "threshold": 11,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/11"
+              }
+            },
+            {
+              "threshold": 12,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/12"
+              }
+            },
+            {
+              "threshold": 13,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/13"
+              }
+            },
+            {
+              "threshold": 14,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/14"
+              }
+            },
+            {
+              "threshold": 15,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/15"
+              }
+            },
+            {
+              "threshold": 16,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/16"
+              }
+            },
+            {
+              "threshold": 17,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/17"
+              }
+            },
+            {
+              "threshold": 18,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/18"
+              }
+            },
+            {
+              "threshold": 19,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/19"
+              }
+            },
+            {
+              "threshold": 20,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/20"
+              }
+            },
+            {
+              "threshold": 21,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/21"
+              }
+            },
+            {
+              "threshold": 22,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/22"
+              }
+            },
+            {
+              "threshold": 23,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/23"
+              }
+            },
+            {
+              "threshold": 24,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/24"
+              }
+            },
+            {
+              "threshold": 25,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/25"
+              }
+            },
+            {
+              "threshold": 26,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/26"
+              }
+            },
+            {
+              "threshold": 27,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/27"
+              }
+            },
+            {
+              "threshold": 28,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/28"
+              }
+            },
+            {
+              "threshold": 29,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/29"
+              }
+            },
+            {
+              "threshold": 30,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/30"
+              }
+            },
+            {
+              "threshold": 31,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_enemies/31"
+              }
+            }
+          ]
+        }
+      },
+	  {
+        "threshold": 2,
+        "model": {
+          "type": "minecraft:range_dispatch",
+          "property": "minecraft:damage",
+          "normalize": true,
+          "entries": [
+            {
+              "threshold": 0,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/29"
+              }
+            },
+            {
+              "threshold": 0.034,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/28"
+              }
+            },
+            {
+              "threshold": 0.068,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/27"
+              }
+            },
+            {
+              "threshold": 0.102,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/26"
+              }
+            },
+            {
+              "threshold": 0.136,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/25"
+              }
+            },
+            {
+              "threshold": 0.17,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/24"
+              }
+            },
+            {
+              "threshold": 0.204,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/23"
+              }
+            },
+            {
+              "threshold": 0.238,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/22"
+              }
+            },
+            {
+              "threshold": 0.272,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/21"
+              }
+            },
+            {
+              "threshold": 0.306,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/20"
+              }
+            },
+            {
+              "threshold": 0.34,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/19"
+              }
+            },
+            {
+              "threshold": 0.374,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/18"
+              }
+            },
+            {
+              "threshold": 0.408,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/17"
+              }
+            },
+            {
+              "threshold": 0.442,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/16"
+              }
+            },
+            {
+              "threshold": 0.51,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/15"
+              }
+            },
+            {
+              "threshold": 0.554,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/14"
+              }
+            },
+            {
+              "threshold": 0.578,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/13"
+              }
+            },
+            {
+              "threshold": 0.612,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/12"
+              }
+            },
+            {
+              "threshold": 0.646,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/11"
+              }
+            },
+            {
+              "threshold": 0.68,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/10"
+              }
+            },
+            {
+              "threshold": 0.714,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/9"
+              }
+            },
+            {
+              "threshold": 0.748,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/8"
+              }
+            },
+            {
+              "threshold": 0.782,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/7"
+              }
+            },
+            {
+              "threshold": 0.816,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/6"
+              }
+            },
+            {
+              "threshold": 0.85,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/5"
+              }
+            },
+            {
+              "threshold": 0.884,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/4"
+              }
+            },
+            {
+              "threshold": 0.918,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/3"
+              }
+            },
+            {
+              "threshold": 0.952,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/2"
+              }
+            },
+            {
+              "threshold": 0.986,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/1"
+              }
+            },
+            {
+              "threshold": 1,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_crystal_hp/0"
+              }
+            }
+          ]
+        }
+      },
+	  {
+        "threshold": 4,
+        "model": {
+          "type": "minecraft:range_dispatch",
+          "property": "minecraft:damage",
+          "normalize": true,
+          "entries": [
+            {
+              "threshold": 0,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/29"
+              }
+            },
+            {
+              "threshold": 0.034,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/28"
+              }
+            },
+            {
+              "threshold": 0.068,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/27"
+              }
+            },
+            {
+              "threshold": 0.102,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/26"
+              }
+            },
+            {
+              "threshold": 0.136,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/25"
+              }
+            },
+            {
+              "threshold": 0.17,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/24"
+              }
+            },
+            {
+              "threshold": 0.204,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/23"
+              }
+            },
+            {
+              "threshold": 0.238,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/22"
+              }
+            },
+            {
+              "threshold": 0.272,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/21"
+              }
+            },
+            {
+              "threshold": 0.306,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/20"
+              }
+            },
+            {
+              "threshold": 0.34,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/19"
+              }
+            },
+            {
+              "threshold": 0.374,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/18"
+              }
+            },
+            {
+              "threshold": 0.408,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/17"
+              }
+            },
+            {
+              "threshold": 0.442,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/16"
+              }
+            },
+            {
+              "threshold": 0.51,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/15"
+              }
+            },
+            {
+              "threshold": 0.554,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/14"
+              }
+            },
+            {
+              "threshold": 0.578,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/13"
+              }
+            },
+            {
+              "threshold": 0.612,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/12"
+              }
+            },
+            {
+              "threshold": 0.646,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/11"
+              }
+            },
+            {
+              "threshold": 0.68,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/10"
+              }
+            },
+            {
+              "threshold": 0.714,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/9"
+              }
+            },
+            {
+              "threshold": 0.748,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/8"
+              }
+            },
+            {
+              "threshold": 0.782,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/7"
+              }
+            },
+            {
+              "threshold": 0.816,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/6"
+              }
+            },
+            {
+              "threshold": 0.85,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/5"
+              }
+            },
+            {
+              "threshold": 0.884,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/4"
+              }
+            },
+            {
+              "threshold": 0.918,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/3"
+              }
+            },
+            {
+              "threshold": 0.952,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/2"
+              }
+            },
+            {
+              "threshold": 0.986,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/1"
+              }
+            },
+            {
+              "threshold": 1,
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/arcade_displays/visible_boss_hp/0"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

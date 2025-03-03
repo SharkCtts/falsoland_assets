@@ -1,0 +1,71 @@
+{
+    "description": "radiant core-effect",
+    "supported_items": "minecraft:air",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+      "base": 0,
+      "per_level_above_first": 0
+    },
+    "max_cost": {
+      "base": 0,
+      "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+      "head"
+    ],
+    "effects": {
+      "minecraft:prevent_equipment_drop": {},
+      "minecraft:tick": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "ench_plus:status/radiant_core/runtime"
+          },
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:time_check",
+                "value": 1,
+                "period": 60
+              }
+            ]
+          }
+        },
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "ench_plus:status/radiant_core/killtask"
+          },
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "effects": {
+                      "minecraft:invisibility": {
+                        "amplifier": 255,
+                        "visible": false
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:time_check",
+                "value": 1,
+                "period": 180
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,1 @@
+execute anchored eyes unless entity @e[type=minecraft:ominous_item_spawner,distance=..2] run summon ominous_item_spawner ~ ~0.5 ~ {spawn_item_after_ticks:100,item:{id:"minecraft:lingering_potion",count:1,components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:wither",amplifier:0,duration:120}]}}}}

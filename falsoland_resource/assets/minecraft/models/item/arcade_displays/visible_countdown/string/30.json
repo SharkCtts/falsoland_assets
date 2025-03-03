@@ -1,0 +1,19 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "item/arcade_displays/visible_countdown/string/30",
+		"particle": "item/arcade_displays/visible_countdown/string/30"
+	},
+	"elements": [
+		{
+			"from": [-16, 4, 0],
+			"to": [32, 16, 0],
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#0"}
+			}
+		}
+	]
+}

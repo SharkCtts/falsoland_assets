@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:charged_projectiles": [
+        {
+          "id": "minecraft:arrow",
+          "count": 1,
+          "components": {
+            "minecraft:intangible_projectile": {}
+          }
+        }
+      ]
+    }
+  }
+]

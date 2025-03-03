@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:chest",  
+  "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_shovel",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:unbreakable": {
+                    "show_in_tooltip": true
+                  },
+                  "minecraft:max_damage": 34,
+                  "minecraft:attribute_modifiers": {
+                    "modifiers": [
+                      {
+                        "id": "item_damage",
+                        "type": "minecraft:attack_damage",
+                        "amount": 4,
+                        "operation": "add_value",
+                        "slot": "mainhand"
+                      },
+                      {
+                        "id": "item_damage",
+                        "type": "minecraft:attack_speed",
+                        "amount": -2.8,
+                        "operation": "add_value",
+                        "slot": "mainhand"
+                      },
+                      {
+                        "id": "item_damage",
+                        "type": "minecraft:entity_interaction_range",
+                        "amount": 0,
+                        "operation": "add_value",
+                        "slot": "mainhand"
+                      },
+                      {
+                        "id": "item_damage",
+                        "type": "minecraft:block_interaction_range",
+                        "amount": 2,
+                        "operation": "add_value",
+                        "slot": "mainhand"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function": "minecraft:reference",
+                "name": "arcade:crystal_protect/shovel"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

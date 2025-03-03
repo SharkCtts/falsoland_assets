@@ -1,0 +1,3 @@
+summon vex ~ ~ ~ {Silent:1b,PersistenceRequired:0b,NoAI:0b,NoGravity:0b,LifeTicks:320,Tags:["arcade_killdeco","no_ench_target","arcade_endcore_ride"],ArmorItems:[{},{},{},{id:"minecraft:stone",count:1,components:{"minecraft:enchantments":{levels:{}}}}],active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:0b}],attributes:[{id:"minecraft:follow_range",base:0}]}
+ride @n[tag=arcade_endcore_ride] mount @s
+execute on passengers run data modify entity @s ArmorItems[3].components."minecraft:enchantments".levels."arcade:protect_crystal/item/sub_end_core" set value 1

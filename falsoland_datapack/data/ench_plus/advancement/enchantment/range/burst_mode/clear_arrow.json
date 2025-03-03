@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:arrow",
+              "components": {
+                "minecraft:custom_data": "{burst_mode:1b}"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "ench_plus:enchantment/range/burst_mode/clear_arrow"
+    }
+}  

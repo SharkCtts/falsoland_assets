@@ -1,0 +1,1 @@
+$playsound $(id) $(typ) $(to) ~ ~ ~ $(vol) $(pit)

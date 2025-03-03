@@ -1,0 +1,77 @@
+{
+  "description": [
+    [
+      "",
+	  {
+        "text": "| ",
+        "color": "dark_aqua",
+        "italic": false,
+        "bold": true
+      },
+      {
+        "translate": "ench_plus.power.name",
+        "color": "aqua",
+        "bold": false
+      },
+      {
+        "translate": "ench_plus.power.lore",
+        "fallback": " ",
+        "color": "white"
+      }
+    ]
+  ],
+  "supported_items": "minecraft:bow",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 2147483647,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:multiply",
+          "factor": 2
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "type": "#minecraft:arrows"
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "type": "minecraft:player"
+              }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.power"
+              },
+              "range": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

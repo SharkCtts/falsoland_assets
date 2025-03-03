@@ -1,0 +1,51 @@
+{
+  "description": [
+    [
+      "",
+      {
+        "text": "▶ ",
+        "color": "#b66700",
+        "bold": true
+      },
+      {
+        "text": "Tipo de revestimiento: ",
+        "color": "#ad7f43"
+      },
+      {
+        "translate": "ench_plus_material.leather",
+        "fallback": "  ",
+        "color": "#ad7f43"
+      }
+    ]
+  ],
+  "supported_items": "#ench_plus:global",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 2147483647,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:item_damage": [
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": {
+            "type": "minecraft:fraction",
+            "numerator": 1,
+            "denominator": 2
+          }
+        }
+      }
+    ]
+  }
+}

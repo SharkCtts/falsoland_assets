@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#minecraft:netherite_tool_materials",
+  "base": "minecraft:diamond_hoe",
+  "result": {
+    "components": { 
+      "minecraft:custom_data": "{ench_plus_data: {default_skin_id: 0, default_durability: 508}}",
+	  "minecraft:max_damage": 508, 
+      "minecraft:attribute_modifiers": { 
+        "modifiers": [ 
+          { 
+            "type": "minecraft:attack_damage", 
+            "id": "minecraft:item_damage", 
+            "amount": 5, 
+            "operation": "add_value", 
+            "slot": "hand" 
+          }, 
+          { 
+            "type": "minecraft:attack_speed", 
+            "id": "minecraft:item_damage", 
+            "amount": -1, 
+            "operation": "add_value", 
+            "slot": "hand" 
+          }, 
+          { 
+            "type": "minecraft:entity_interaction_range", 
+            "id": "minecraft:item_damage", 
+            "amount": 2, 
+            "operation": "add_value", 
+            "slot": "hand" 
+          }, 
+          { 
+            "type": "minecraft:block_interaction_range", 
+            "id": "minecraft:item_damage", 
+            "amount": 2, 
+            "operation": "add_value", 
+            "slot": "hand" 
+          } 
+        ] 
+      } 
+    }, 
+    "count": 1,
+    "id": "minecraft:netherite_hoe"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

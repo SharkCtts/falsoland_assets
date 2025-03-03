@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:mangrove_leaves",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:reference",
+                      "name": "ench_plus:tools/silk_touch"
+                    },
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "items": "minecraft:shears"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:stick",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:table_bonus",
+                      "enchantment": "ench_plus:rule_base/tool/fortune",
+                      "chances": [
+                        0.05,
+                        0.0625
+                      ]
+                    },
+                    {
+                      "condition": "minecraft:table_bonus",
+                      "enchantment": "ench_plus:rule_plus/tool/fortune",
+                      "chances": [
+                        0.05,
+                        0.1
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:storage",
+    "storage": "arcade:telemetry",
+    "path": "dump.score"
+  },
+  "range": {
+    "min": {
+      "type": "minecraft:storage",
+      "storage": "arcade:telemetry",
+      "path": "ranking.top_1.score"
+    }
+  }
+}

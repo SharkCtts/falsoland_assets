@@ -1,0 +1,62 @@
+{
+  "description": "soulbreaker-effect",
+  "supported_items": "minecraft:air",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:prevent_equipment_drop": {},
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "ench_plus:status/soulbreaker/killtask"
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "effects": {
+                    "minecraft:invisibility": {
+                      "amplifier": 255,
+                      "visible": false
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:time_check",
+              "value": 1,
+              "period": 4
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "ench_plus:status/soulbreaker/runtime"
+        }
+      }
+    ]
+  }
+}

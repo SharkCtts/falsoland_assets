@@ -1,0 +1,104 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:lapis_ore",
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "ench_plus:tools/silk_touch"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:lapis_lazuli",
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "ench_plus:tools/magma_hit"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "",
+              "value": "ench_plus:tool/jackpot/lapis",
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "ench_plus:tools/jackpot"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:lapis_lazuli",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 4,
+                    "max": 9
+                  }
+                },
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 0,
+                    "max": 9
+                  },
+                  "add": true,
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "ench_plus:rule_base/tool/fortune"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 0,
+                    "max": 15
+                  },
+                  "add": true,
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "ench_plus:rule_plus/tool/fortune"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

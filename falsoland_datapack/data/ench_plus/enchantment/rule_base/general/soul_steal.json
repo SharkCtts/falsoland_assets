@@ -1,0 +1,96 @@
+{
+  "description": [
+    [
+      "",
+	  {
+        "text": "| ",
+        "color": "dark_aqua",
+        "italic": false,
+        "bold": true
+      },
+      {
+        "translate": "ench_plus.soul_steal.name",
+        "color": "aqua",
+        "bold": false
+      },
+      {
+        "translate": "ench_plus.soul_steal.lore",
+        "fallback": " ",
+        "color": "white"
+      }
+    ]
+  ],
+  "supported_items": "#ench_plus:global",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 2147483647,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "ench_plus:enchantment/general/soul_steal/spawn"
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Health:0.0f}"
+              }
+            },
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "attacker",
+                  "predicate": {
+                    "movement": {
+                      "fall_distance": {
+                        "min": 0.001,
+                        "max": 2147483647
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "direct_attacker",
+                  "predicate": {
+                    "nbt": "{crit:1b}"
+                  }
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.soul_steal"
+              },
+              "range": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

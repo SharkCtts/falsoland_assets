@@ -1,0 +1,120 @@
+{
+  "criteria": {
+    "criteria_1": {
+      "trigger": "minecraft:default_block_use",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": "minecraft:wooden_pickaxe",
+                      "components": {
+                        "minecraft:max_damage": 59
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": "minecraft:stone_pickaxe",
+                      "components": {
+                        "minecraft:max_damage": 131
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": "minecraft:iron_pickaxe",
+                      "components": {
+                        "minecraft:max_damage": 250
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": "minecraft:golden_pickaxe",
+                      "components": {
+                        "minecraft:max_damage": 32
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": "minecraft:diamond_pickaxe",
+                      "components": {
+                        "minecraft:max_damage": 1561
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": "minecraft:netherite_pickaxe",
+                      "components": {
+                        "minecraft:max_damage": 2031
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:smithing_table"
+          }
+        ]
+      }
+    },
+    "criteria_2": {
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "criteria_1"
+    ],
+    [
+      "criteria_2"
+    ]
+  ],
+  "rewards": {
+    "function": "lib_extra:gt_item/pickaxe"
+  }
+}

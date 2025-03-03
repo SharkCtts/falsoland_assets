@@ -1,0 +1,1 @@
+effect give @s minecraft:luck 15 255 true

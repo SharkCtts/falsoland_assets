@@ -1,0 +1,6 @@
+{
+	"parent":"item/handheld",
+	"textures":{
+		"layer0":"item/enchplus_vfxs/radiant_aura/radiant_aura"
+	}
+}

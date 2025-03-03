@@ -1,0 +1,48 @@
+{
+  "description": [
+    [
+      "",
+	  {
+        "text": "| ",
+        "color": "gold",
+        "italic": false,
+        "bold": true
+      },
+      {
+        "translate": "ench_plus.efficiency.name",
+        "color": "yellow",
+        "bold": false
+      },
+      {
+        "translate": "ench_plus.efficiency.lore",
+        "fallback": " ",
+        "color": "white"
+      }
+    ]
+  ],
+  "supported_items": "#ench_plus:tool",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 2147483647,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "minecraft:enchantment.efficiency",
+        "attribute": "minecraft:mining_efficiency",
+        "amount": 29,
+        "operation": "add_value"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+execute on vehicle if data entity @s anger.suspects[0] run data remove entity @s anger.suspects
+execute on vehicle if data entity @s Brain.memories."minecraft:sniff_cooldown" run data modify entity @s Brain.memories."minecraft:sniff_cooldown".ttl set value 29
+execute on vehicle if data entity @s Brain.memories."minecraft:vibration_cooldown" run data modify entity @s Brain.memories."minecraft:vibration_cooldown".ttl set value 29

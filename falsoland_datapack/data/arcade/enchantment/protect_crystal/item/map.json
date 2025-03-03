@@ -1,0 +1,37 @@
+{
+  "description": {
+    "text": "Este objeto pierde durabilidad...",
+    "color": "red",
+    "italic": false
+  },
+  "supported_items": "air",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:time_check",
+          "value": 1,
+          "period": 160
+        },
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": 2
+        }
+      }
+    ]
+  }
+}

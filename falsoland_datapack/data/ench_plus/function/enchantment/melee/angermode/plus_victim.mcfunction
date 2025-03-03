@@ -1,0 +1,1 @@
+execute on attacker run function ench_plus:enchantment/melee/angermode/plus_effect

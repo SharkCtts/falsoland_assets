@@ -1,0 +1,1 @@
+$function arcade:protect_crystal/spawn/event/$(event_id)/boot

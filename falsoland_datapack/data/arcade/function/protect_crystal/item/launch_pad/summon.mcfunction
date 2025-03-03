@@ -1,0 +1,1 @@
+$execute at @n[distance=..2,nbt={OnGround:1b}] anchored eyes positioned ~ ~1 ~ summon snowball run function arcade:protect_crystal/item/launch_pad/setup {"1":$(1),"2":$(2),"3":$(3)}

@@ -1,0 +1,39 @@
+{
+    "criteria": {
+      "deflected_projectile": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "mainhand": {
+                        "components": {
+                          "minecraft:enchantments": {
+                            "ench_plus:rule_base/melee/perfect_parry": 1
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "damage": {
+            "blocked": true,
+            "type": {}
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "ench_plus:enchantment/melee/perfect_parry/attack_blocked"
+    }
+}
+  

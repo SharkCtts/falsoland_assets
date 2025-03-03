@@ -1,0 +1,10 @@
+{
+    "comparator_output": 1,
+    "description": {
+        "text": "Featherfall (Remix) - Hyper Potions, Aaron Cherof & Ian Tsuchiura"
+    },
+    "length_in_seconds": 213.0,
+    "sound_event": {
+		"sound_id": "minecraft:arcade.lobby_music.featherfall"
+	}
+}

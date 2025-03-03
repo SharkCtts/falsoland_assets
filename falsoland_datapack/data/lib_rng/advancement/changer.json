@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "clock": {
+      "trigger": "minecraft:location",
+      "conditions": {}
+    },
+    "hurt": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": false
+        }
+      }
+    },
+    "kill": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {}
+    },
+    "item": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {}
+      }
+    }
+  },
+  "requirements": [
+    [
+      "clock"
+    ],
+    [
+      "hurt",
+      "item",
+      "kill"
+    ]
+  ],
+  "rewards": {
+    "function": "lib_rng:changer"
+  }
+}

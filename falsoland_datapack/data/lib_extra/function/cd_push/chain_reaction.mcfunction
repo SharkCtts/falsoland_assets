@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":" \n"},{"text":"\u25c6 ","color":"dark_aqua"},{"color":"aqua","translate":"ench_plus.chain_reaction.name"},{"text":": "},{"score":{"name":"@s","objective":"ench_chainreac_cooldown"},"color":"white"},{"text":" seg."}]

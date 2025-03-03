@@ -1,0 +1,1 @@
+execute on passengers if entity @s[tag=is_gunpowder] run function ench_plus:enchantment/general/gunpowder/ignite/apply

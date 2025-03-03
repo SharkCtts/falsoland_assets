@@ -1,0 +1,85 @@
+{
+  "description": [
+    [
+      "",
+      {
+        "text": "▶ ",
+        "color": "#0044ff",
+        "bold": true
+      },
+      {
+        "text": "Tipo de revestimiento: ",
+        "color": "#0099ff"
+      },
+      {
+        "translate": "ench_plus_material.breeze",
+        "fallback": "  ",
+        "color": "#0099ff"
+      }
+    ]
+  ],
+  "supported_items": "#ench_plus:global",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 2147483647,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:item_damage": [
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": {
+            "type": "minecraft:fraction",
+            "numerator": 1,
+            "denominator": 3
+          }
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "ench_plus:held/breeze/shoot"
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "attacker",
+              "scores": {
+                "lib.rng": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "held.breeze"
+              },
+              "range": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

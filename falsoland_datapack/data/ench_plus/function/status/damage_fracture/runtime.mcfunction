@@ -1,0 +1,2 @@
+execute if data entity @s ArmorItems[3].components."minecraft:custom_data".mode run function ench_plus:status/damage_fracture/macro_01 with entity @s ArmorItems[3].components."minecraft:custom_data"
+execute unless data entity @s ArmorItems[3].components."minecraft:custom_data".mode run function ench_plus:status/damage_fracture/macro_02 with entity @s ArmorItems[3].components."minecraft:custom_data"

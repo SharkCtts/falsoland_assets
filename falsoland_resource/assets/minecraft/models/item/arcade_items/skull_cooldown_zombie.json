@@ -1,0 +1,185 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "item/arcade_items/skull_cooldown_zombie",
+		"particle": "item/arcade_items/skull_cooldown_zombie"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [4, 4, 8, 8], "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 8], "texture": "#0"},
+				"south": {"uv": [4, 8, 8, 12], "texture": "#0"},
+				"west": {"uv": [0, 8, 4, 12], "texture": "#0"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#0"},
+				"down": {"uv": [4, 0, 8, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "eye1",
+			"from": [10, 6, -0.01],
+			"to": [14, 8, -0.01],
+			"light_emission": 8,
+			"rotation": {"angle": 0, "axis": "y", "origin": [10, 6, 0]},
+			"faces": {
+				"north": {"uv": [4.5, 6, 5.5, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "eye2",
+			"from": [2, 6, -0.01],
+			"to": [6, 8, -0.01],
+			"light_emission": 8,
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, 6, 0]},
+			"faces": {
+				"north": {"uv": [6.5, 6, 7.5, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "snow",
+			"from": [-0.02, -0.02, -0.02],
+			"to": [16.02, 16.02, 16.02],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, -1, 0]},
+			"faces": {
+				"north": {"uv": [12, 4, 16, 8], "texture": "#0"},
+				"east": {"uv": [8, 4, 12, 8], "texture": "#0"},
+				"south": {"uv": [12, 8, 16, 12], "texture": "#0"},
+				"west": {"uv": [8, 8, 12, 12], "texture": "#0"},
+				"up": {"uv": [8, 0, 12, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "snow_vfx",
+			"from": [0, 0, 0],
+			"to": [0, 5, 5],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"east": {"uv": [15.5, 0.5, 13, 3], "texture": "#0"},
+				"west": {"uv": [13, 0.5, 15.5, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "snow_vfx",
+			"from": [0, 9, 4],
+			"to": [0, 14, 9],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [0, 9, 4]},
+			"faces": {
+				"east": {"uv": [15.5, 0.5, 13, 3], "texture": "#0"},
+				"west": {"uv": [13, 0.5, 15.5, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "snow_vfx",
+			"from": [0, 0, 11],
+			"to": [0, 7, 18],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [0, 0, 11]},
+			"faces": {
+				"east": {"uv": [15.5, 0.5, 13, 3], "texture": "#0"},
+				"west": {"uv": [13, 0.5, 15.5, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "snow_vfx",
+			"from": [16, 1, 1],
+			"to": [16, 6, 6],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [16, 1, 1]},
+			"faces": {
+				"east": {"uv": [15.5, 0.5, 13, 3], "texture": "#0"},
+				"west": {"uv": [13, 0.5, 15.5, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "snow_vfx",
+			"from": [16, 4, 8],
+			"to": [16, 11, 15],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [16, 4, 8]},
+			"faces": {
+				"east": {"uv": [15.5, 0.5, 13, 3], "texture": "#0"},
+				"west": {"uv": [13, 0.5, 15.5, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "snow_vfx",
+			"from": [16, 10, 4],
+			"to": [16, 15, 9],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [16, 10, 4]},
+			"faces": {
+				"east": {"uv": [15.5, 0.5, 13, 3], "texture": "#0"},
+				"west": {"uv": [13, 0.5, 15.5, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "snow_vfx_top",
+			"from": [0, 16, 0],
+			"to": [5, 21, 0],
+			"rotation": {"angle": 45, "axis": "x", "origin": [0, 16, 0]},
+			"faces": {
+				"north": {"uv": [13, 0.5, 15.5, 3], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 5], "texture": "#0"},
+				"south": {"uv": [15.5, 0.5, 13, 3], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 5], "texture": "#0"},
+				"up": {"uv": [0, 0, 5, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 5, 0], "texture": "#0"}
+			}
+		},
+		{
+			"name": "snow_vfx_top",
+			"from": [7, 16, 2],
+			"to": [14, 23, 2],
+			"rotation": {"angle": 45, "axis": "x", "origin": [9, 16, 2]},
+			"faces": {
+				"north": {"uv": [13, 0.5, 15.5, 3], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 5], "texture": "#0"},
+				"south": {"uv": [15.5, 0.5, 13, 3], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 5], "texture": "#0"},
+				"up": {"uv": [0, 0, 5, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 5, 0], "texture": "#0"}
+			}
+		},
+		{
+			"name": "snow_vfx_top",
+			"from": [5, 16, 10],
+			"to": [10, 22, 10],
+			"rotation": {"angle": 45, "axis": "x", "origin": [6, 16, 10]},
+			"faces": {
+				"north": {"uv": [13, 0.5, 15.5, 3], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 5], "texture": "#0"},
+				"south": {"uv": [15.5, 0.5, 13, 3], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 5], "texture": "#0"},
+				"up": {"uv": [0, 0, 5, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 5, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [40, -45, -45],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [40, -45, -45],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"firstperson_righthand": {
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"scale": [0.31, 0.31, 0.31]
+		},
+		"gui": {
+			"rotation": [-145, 45, 180],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"head": {
+			"scale": [0.81, 0.81, 0.81]
+		},
+		"fixed": {
+			"scale": [0.75, 0.75, 0.75]
+		}
+	}
+}

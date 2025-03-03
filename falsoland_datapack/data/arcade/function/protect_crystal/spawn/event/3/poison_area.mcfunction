@@ -1,0 +1,1 @@
+execute positioned ~-144 ~-64 ~-144 as @a[dx=288,dz=288,dy=128] if predicate {"condition":"minecraft:inverted","term":{"condition":"minecraft:entity_properties","entity":"this","predicate":{"effects":{"minecraft:luck":{}}}}} run effect give @s minecraft:wither 16 1 false

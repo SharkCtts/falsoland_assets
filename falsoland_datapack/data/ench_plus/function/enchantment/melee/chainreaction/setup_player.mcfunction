@@ -1,0 +1,2 @@
+function lib_team:get
+function lib_getuid:generate

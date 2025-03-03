@@ -1,0 +1,166 @@
+{
+  "criteria": {
+    "ambush": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ench_ambush_cooldown": {
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:time_check",
+                "value": {
+                  "min": 1,
+                  "max": 20
+                },
+                "period": 1200
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "radiant": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ench_radiant_cooldown": {
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:time_check",
+                "value": {
+                  "min": 1,
+                  "max": 20
+                },
+                "period": 1200
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "chain_reaction": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ench_chainreac_cooldown": {
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:time_check",
+                "value": {
+                  "min": 1,
+                  "max": 20
+                },
+                "period": 1200
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "breakfast": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ench_breakfast_cooldown": {
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:time_check",
+                "value": {
+                  "min": 1,
+                  "max": 20
+                },
+                "period": 1200
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "burstmode": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ench_burstmode_cooldown": {
+                    "min": 1,
+                    "max": 2147483647
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:time_check",
+                "value": {
+                  "min": 1,
+                  "max": 20
+                },
+                "period": 1200
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ambush",
+      "radiant",
+      "chain_reaction",
+      "breakfast",
+      "burstmode"
+    ]
+  ],
+  "rewards": {
+    "function": "lib_extra:cd_info/__main"
+  }
+}

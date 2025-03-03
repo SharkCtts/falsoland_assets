@@ -1,0 +1,1 @@
+$execute at @n[sort=random,type=marker,tag=arcade_portal] run function arcade:protect_crystal/spawn/portal/$(release)

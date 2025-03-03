@@ -1,0 +1,19 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "item/arcade_displays/visible_boss_hp/6",
+		"particle": "item/arcade_displays/visible_boss_hp/6"
+	},
+	"elements": [
+		{
+			"from": [-16, 7, 0],
+			"to": [32, 19, 0],
+			"light_emission": 15,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 4, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#0"}
+			}
+		}
+	]
+}

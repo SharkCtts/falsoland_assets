@@ -1,0 +1,10 @@
+{
+    "comparator_output": 1,
+    "description": {
+        "text": "komorebi (Remix) - AIKA, Khoa Pham & Kumi Tanioka"
+    },
+    "length_in_seconds": 213.0,
+    "sound_event": {
+		"sound_id": "minecraft:arcade.lobby_music.komorebi"
+	}
+}

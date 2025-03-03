@@ -1,0 +1,3 @@
+execute positioned ~-144 ~-64 ~-144 run tellraw @a[dx=288,dz=288,dy=128] ["",{"text":"[","color":"dark_aqua","bold":true},{"text":"🎉","color":"aqua"},{"text":"] ","color":"dark_aqua"},{"text":"Se realizaron x"},{"nbt":"data.event.remains[0]","storage":"arcade:activity"},{"text":" cura(s)."}]
+data remove storage arcade:activity data.event.remains[0]
+execute unless data storage arcade:activity data.event.remains[0] run data modify storage arcade:activity data.event.clear set value 1

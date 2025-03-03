@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":" \n"},{"text":"\u25c6 ","color":"dark_aqua"},{"color":"aqua","translate":"ench_plus.breakfast.name"},{"text":": "},{"score":{"name":"@s","objective":"ench_breakfast_cooldown"},"color":"white"},{"text":" seg."}]

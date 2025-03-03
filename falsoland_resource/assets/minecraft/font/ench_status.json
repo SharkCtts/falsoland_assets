@@ -1,0 +1,61 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/ench_status/chain_reaction.png",
+            "ascent": 128,
+            "height": 256,
+            "chars": ["\uE000"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/ench_status/cinematic_mode.png",
+            "ascent": 130,
+            "height": 256,
+            "chars": ["\uE001"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/ench_status/shock_attack.png",
+            "ascent": 32,
+            "height": 32,
+            "chars": ["\uE002"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/ench_status/stunned.png",
+            "ascent": 8,
+            "height": 8,
+            "chars": ["\uE003"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/ench_status/ricochet.png",
+            "ascent": 32,
+            "height": 32,
+            "chars": ["\uE004"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/ench_status/powder_low.png",
+            "ascent": 60,
+            "height": 60,
+            "chars": ["\uE005"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/ench_status/powder_mid.png",
+            "ascent": 60,
+            "height": 60,
+            "chars": ["\uE006"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/ench_status/powder_max.png",
+            "ascent": 60,
+            "height": 60,
+            "chars": ["\uE007"]
+        }
+		
+    ]
+}

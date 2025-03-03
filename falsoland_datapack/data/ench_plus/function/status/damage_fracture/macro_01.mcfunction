@@ -1,0 +1,2 @@
+$execute as @e[sort=random,distance=..3.5,predicate=ench_plus:entity/enchanted$(ignore)] at @s anchored eyes run particle block{block_state:"minecraft:purple_wool"} ^ ^ ^0.1 0.2 0.4 0.2 1 8 normal
+$execute as @e[sort=random,distance=..3.5,predicate=ench_plus:entity/enchanted$(ignore)] at @s run damage @s 4 minecraft:indirect_magic by $(caused) from $(caused)

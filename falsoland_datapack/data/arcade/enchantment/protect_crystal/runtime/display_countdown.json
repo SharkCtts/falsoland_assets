@@ -1,0 +1,44 @@
+{
+    "description": " ",
+    "supported_items": "air",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+      "base": 0,
+      "per_level_above_first": 0
+    },
+    "max_cost": {
+      "base": 0,
+      "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+      "any"
+    ],
+    "effects": {
+      "minecraft:tick": [
+        {
+          "requirements": {
+            "condition": "minecraft:time_check",
+            "value": 2,
+            "period": 20
+          },
+          "effect": {
+            "type": "minecraft:change_item_damage",
+            "amount": -1
+          }
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:time_check",
+            "value": 2,
+            "period": 20
+          },
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "arcade:protect_crystal/spawn/display/update_clock"
+          }
+        }
+      ]
+    }
+  }

@@ -1,0 +1,49 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "hotbar.2": {
+            "items": "minecraft:crossbow",
+            "components": {
+              "minecraft:charged_projectiles": []
+            },
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "ench_plus:rule_base/range/command",
+                  "levels": 1
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "hotbar.2": {
+            "items": "minecraft:crossbow",
+            "components": {
+              "minecraft:charged_projectiles": []
+            },
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "ench_plus:rule_plus/range/command",
+                  "levels": 1
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

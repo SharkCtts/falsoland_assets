@@ -1,0 +1,6 @@
+{
+    "parent":"item/handheld",
+    "textures": {
+        "layer0": "item/enchplus_items/shovel/netherite_golden_shovel"
+    }
+}

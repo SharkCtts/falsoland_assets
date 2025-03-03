@@ -1,0 +1,9 @@
+execute if predicate ench_plus:range/command/h_3 run return run function ench_plus:enchantment/range/command/slot/store_crossbow {"slot":"3"}
+execute if predicate ench_plus:range/command/h_0 run return run function ench_plus:enchantment/range/command/slot/store_crossbow {"slot":"0"}
+execute if predicate ench_plus:range/command/h_1 run return run function ench_plus:enchantment/range/command/slot/store_crossbow {"slot":"1"}
+execute if predicate ench_plus:range/command/h_4 run return run function ench_plus:enchantment/range/command/slot/store_crossbow {"slot":"4"}
+execute if predicate ench_plus:range/command/h_7 run return run function ench_plus:enchantment/range/command/slot/store_crossbow {"slot":"7"}
+execute if predicate ench_plus:range/command/h_5 run return run function ench_plus:enchantment/range/command/slot/store_crossbow {"slot":"5"}
+execute if predicate ench_plus:range/command/h_2 run return run function ench_plus:enchantment/range/command/slot/store_crossbow {"slot":"2"}
+execute if predicate ench_plus:range/command/h_6 run return run function ench_plus:enchantment/range/command/slot/store_crossbow {"slot":"6"}
+execute if predicate ench_plus:range/command/h_8 run return run function ench_plus:enchantment/range/command/slot/store_crossbow {"slot":"8"}

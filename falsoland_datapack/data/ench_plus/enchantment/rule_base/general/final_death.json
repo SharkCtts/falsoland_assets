@@ -1,0 +1,70 @@
+{
+  "description": [
+    [
+      "",
+	  {
+        "text": "| ",
+        "color": "dark_aqua",
+        "italic": false,
+        "bold": true
+      },
+      {
+        "translate": "ench_plus.final_death.name",
+        "color": "aqua",
+        "bold": false
+      },
+      {
+        "translate": "ench_plus.final_death.lore",
+        "fallback": " ",
+        "color": "white"
+      }
+    ]
+  ],
+  "supported_items": "#ench_plus:global",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 2147483647,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:multiply",
+          "factor": 2.5
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "#ench_plus:final_death"
+              }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.final_death"
+              },
+              "range": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

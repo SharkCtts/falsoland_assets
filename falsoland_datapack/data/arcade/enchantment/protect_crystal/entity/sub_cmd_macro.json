@@ -1,0 +1,71 @@
+{
+  "description": " ",
+  "supported_items": "air",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "source_entity": {
+              "type": "minecraft:player"
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "arcade:protect_crystal/entity/cmd_macro/shield_end"
+        },
+        "enchanted": "victim",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "effects": {
+                "minecraft:resistance": {
+                  "amplifier": 255
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "arcade:protect_crystal/entity/cmd_macro/shield_end"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:time_check",
+          "value": 1,
+          "period": 40
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "arcade:protect_crystal/entity/cmd_macro/shield_cast"
+        }
+      }
+    ]
+  }
+}

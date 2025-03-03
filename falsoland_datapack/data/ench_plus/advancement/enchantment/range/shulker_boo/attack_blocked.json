@@ -1,0 +1,53 @@
+{
+  "criteria": {
+    "mainhand": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "components": {
+                "minecraft:enchantments": {
+                  "ench_plus:rule_base/range/shulker_boo": 1
+                }
+              }
+            }
+          }
+        },
+        "damage": {
+          "blocked": true,
+          "type": {}
+        }
+      }
+    },
+    "offhand": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "offhand": {
+              "components": {
+                "minecraft:enchantments": {
+                  "ench_plus:rule_base/range/shulker_boo": 1
+                }
+              }
+            }
+          }
+        },
+        "damage": {
+          "blocked": true,
+          "type": {}
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "mainhand",
+      "offhand"
+    ]
+  ],
+  "rewards": {
+    "function": "ench_plus:enchantment/range/shulker_boo/attack_blocked"
+  }
+}

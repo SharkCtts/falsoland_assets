@@ -1,0 +1,1 @@
+$function lib_schedule:schedule {"tick":"15","user":"@s","cmd":"function ench_plus:enchantment/general/gunpowder/ignite/explotion_0 {\\\"caused\\\":\\\"$(caused)\\\"}"}

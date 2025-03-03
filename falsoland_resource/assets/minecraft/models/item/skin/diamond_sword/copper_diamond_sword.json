@@ -1,0 +1,6 @@
+{
+    "parent":"item/handheld",
+    "textures": {
+        "layer0": "item/enchplus_items/sword/copper_diamond_sword"
+    }
+}

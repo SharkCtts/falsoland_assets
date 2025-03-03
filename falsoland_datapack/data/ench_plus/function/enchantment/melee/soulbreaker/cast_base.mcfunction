@@ -1,0 +1,5 @@
+execute on attacker run function lib_team:get
+
+execute anchored feet positioned ^ ^ ^-1 run summon vex ~ ~ ~ {Silent:1b,Invulnerable:1b,Tags:["soulbreaker_temp","no_ench_target"],PersistenceRequired:1b,Health:1f,HandItems:[{},{}],ArmorItems:[{},{},{},{id:"minecraft:polished_blackstone_button",count:1,components:{"minecraft:custom_data":{},"minecraft:enchantments":{levels:{"ench_plus:status/soulbreaker":1}}}}],active_effects:[{duration:15,show_icon:0b,hidden_effect:{id:"minecraft:invisibility",duration:-1,show_icon:0b,amplifier:-2b,show_particles:0b},amplifier:-1b,id:"minecraft:invisibility",show_particles:0b}]}
+execute as @n[tag=soulbreaker_temp,distance=..2] run rotate @s facing ~ ~ ~
+execute as @n[tag=soulbreaker_temp,distance=..2] run function ench_plus:enchantment/melee/soulbreaker/setup_shoot

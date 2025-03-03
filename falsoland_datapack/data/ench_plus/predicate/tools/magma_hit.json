@@ -1,0 +1,69 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "ench_plus:rule_base/tool/magma_hit",
+                  "levels": 1
+                }
+              ]
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "light": {
+                "light": {
+                  "min": 8,
+                  "max": 15
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "ench_plus:rule_plus/tool/magma_hit",
+                  "levels": 1
+                }
+              ]
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "light": {
+                "light": {
+                  "min": 1,
+                  "max": 15
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

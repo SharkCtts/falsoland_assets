@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "lib.rng": {
+        "min": 75,
+        "max": 100
+      }
+    }
+  }
+  

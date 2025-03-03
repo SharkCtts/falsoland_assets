@@ -1,0 +1,22 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": [
+        "minecraft:skeleton_horse",
+        "minecraft:cave_spider",
+        "minecraft:drowned",
+        "minecraft:spider",
+        "minecraft:zombified_piglin",
+        "minecraft:husk",
+        "minecraft:phantom",
+        "minecraft:skeleton",
+        "minecraft:stray",
+        "minecraft:wither_skeleton",
+        "minecraft:zoglin",
+        "minecraft:zombie",
+        "minecraft:zombie_villager"
+      ]
+    }
+  }
+  

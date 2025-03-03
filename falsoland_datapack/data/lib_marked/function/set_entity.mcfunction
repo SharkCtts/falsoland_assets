@@ -1,0 +1,7 @@
+attribute @s minecraft:scale modifier add marked_entity 0.1 add_multiplied_total
+summon vex ~ ~ ~ {Silent:1b,Invulnerable:1b,Tags:["ride","no_ench_target"],PersistenceRequired:1b,Passengers:[{id:"minecraft:snowball",NoGravity:1b,Item:{id:"minecraft:music_disc_11",count:1,components:{"minecraft:custom_model_data":{floats:[1]},"minecraft:item_model":"minecraft:extra/enchplus_entities"}}}],NoAI:1b,Health:1f,HandItems:[{},{}],ArmorItems:[{},{},{},{id:"minecraft:stone",count:1,components:{"minecraft:custom_data":{},"minecraft:enchantments":{levels:{"lib_marked:display":1}}}}],active_effects:[{duration:10,show_icon:0b,hidden_effect:{id:"minecraft:invisibility",duration:-1,show_icon:0b,amplifier:-2b,show_particles:0b},amplifier:-1b,id:"minecraft:invisibility",show_particles:0b}]}
+scoreboard players set @s lib.marked 1
+ride @n[tag=ride,type=vex] mount @s
+execute on passengers if entity @n[tag=ride,type=vex] run tag @s remove ride
+
+tellraw @a[distance=..24] ["",{"text":"[","bold":true,"color":"gold"},{"text":"!","bold":true,"color":"dark_red"},{"text":"] ","bold":true,"color":"gold"},{"text":"¡Un enemigo en el area ha sido marcado!","color":"white"}]

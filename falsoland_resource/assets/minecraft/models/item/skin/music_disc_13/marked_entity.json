@@ -1,0 +1,6 @@
+{
+	"parent":"item/handheld",
+	"textures":{
+		"layer0":"item/enchplus_vfxs/marked_entity/marked_icon"
+	}
+}

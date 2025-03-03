@@ -1,0 +1,1 @@
+execute on passengers if entity @s[tag=arcade_display_boss] store result entity @s item.components."minecraft:damage" int 1 on vehicle run data get entity @s Health

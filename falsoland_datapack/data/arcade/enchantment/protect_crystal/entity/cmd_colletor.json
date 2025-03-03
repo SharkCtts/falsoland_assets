@@ -1,0 +1,178 @@
+{
+  "description": " ",
+  "supported_items": "air",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:time_check",
+              "value": 1,
+              "period": 40
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "effects": {
+                    "minecraft:haste": {}
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:haste",
+          "min_duration": 50,
+          "max_duration": 60,
+          "min_amplifier": 255,
+          "max_amplifier": 255
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "effects": {
+              "minecraft:haste": {
+                "amplifier": 255,
+                "duration": 680
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:play_sound",
+          "sound": "item.crossbow.loading_start",
+          "volume": 1,
+          "pitch": 0.6
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "effects": {
+              "minecraft:haste": {
+                "amplifier": 255,
+                "duration": 520
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:play_sound",
+          "sound": "minecraft:item.crossbow.loading_middle",
+          "volume": 1,
+          "pitch": 0.6
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "effects": {
+              "minecraft:haste": {
+                "amplifier": 255,
+                "duration": 360
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:play_sound",
+          "sound": "minecraft:item.crossbow.loading_end",
+          "volume": 1,
+          "pitch": 0.6
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "effects": {
+              "minecraft:haste": {
+                "amplifier": 255,
+                "duration": 40
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:play_sound",
+          "sound": "minecraft:item.crossbow.shoot",
+          "volume": 1,
+          "pitch": 0.8
+        }
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "effects": {
+                  "minecraft:haste": {
+                    "duration": {
+                      "min": 1,
+                      "max": 21
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "arcade:protect_crystal/entity/cmd_collector/cast_damage"
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Health:0.0f}"
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "arcade:protect_crystal/entity/cmd_collector/cast_item"
+        },
+        "enchanted": "victim",
+        "affected": "victim"
+      }
+    ]
+  }
+}

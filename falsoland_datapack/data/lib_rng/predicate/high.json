@@ -1,0 +1,19 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "slots": {
+        "container.*": {
+          "items": "minecraft:music_disc_11",
+          "count": {
+            "min": 69,
+            "max": 99
+          },
+          "predicates": {
+            "minecraft:custom_data": "{lucky_soul:1b}"
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,134 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "levels": {
+                        "min": 1,
+                        "max": 255
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "legs": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "levels": {
+                        "min": 1,
+                        "max": 255
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "levels": {
+                        "min": 1,
+                        "max": 255
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "head": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "levels": {
+                        "min": 1,
+                        "max": 255
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "offhand": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "levels": {
+                        "min": 1,
+                        "max": 255
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "levels": {
+                        "min": 1,
+                        "max": 255
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "ench_plus:status/enchant_target"
+    }
+  ]
+}
