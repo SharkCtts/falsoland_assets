@@ -1,5 +1,21 @@
 {
   "values": [
-    "#minecraft:non_treasure"
+    "minecraft:protection",
+    "minecraft:fire_protection",
+    "minecraft:feather_falling",
+    "minecraft:blast_protection",
+    "minecraft:projectile_protection",
+    "minecraft:respiration",
+    "minecraft:aqua_affinity",
+    "minecraft:thorns",
+    "minecraft:depth_strider",
+    "minecraft:density",
+    "minecraft:breach",
+	"minecraft:luck_of_the_sea",
+    "minecraft:lure",
+    "minecraft:loyalty",
+    "minecraft:impaling",
+    "minecraft:riptide",
+    "minecraft:channeling"
   ]
 }

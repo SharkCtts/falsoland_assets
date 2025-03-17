@@ -1,0 +1,224 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:damage",
+        "normalize": true,
+        "entries": [
+          {
+            "threshold": 0,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/29"
+            }
+          },
+          {
+            "threshold": 0.034,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/28"
+            }
+          },
+          {
+            "threshold": 0.068,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/27"
+            }
+          },
+          {
+            "threshold": 0.102,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/26"
+            }
+          },
+          {
+            "threshold": 0.136,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/25"
+            }
+          },
+          {
+            "threshold": 0.17,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/24"
+            }
+          },
+          {
+            "threshold": 0.204,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/23"
+            }
+          },
+          {
+            "threshold": 0.238,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/22"
+            }
+          },
+          {
+            "threshold": 0.272,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/21"
+            }
+          },
+          {
+            "threshold": 0.306,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/20"
+            }
+          },
+          {
+            "threshold": 0.34,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/19"
+            }
+          },
+          {
+            "threshold": 0.374,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/18"
+            }
+          },
+          {
+            "threshold": 0.408,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/17"
+            }
+          },
+          {
+            "threshold": 0.442,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/16"
+            }
+          },
+          {
+            "threshold": 0.51,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/15"
+            }
+          },
+          {
+            "threshold": 0.554,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/14"
+            }
+          },
+          {
+            "threshold": 0.578,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/13"
+            }
+          },
+          {
+            "threshold": 0.612,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/12"
+            }
+          },
+          {
+            "threshold": 0.646,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/11"
+            }
+          },
+          {
+            "threshold": 0.68,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/10"
+            }
+          },
+          {
+            "threshold": 0.714,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/9"
+            }
+          },
+          {
+            "threshold": 0.748,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/8"
+            }
+          },
+          {
+            "threshold": 0.782,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/7"
+            }
+          },
+          {
+            "threshold": 0.816,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/6"
+            }
+          },
+          {
+            "threshold": 0.85,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/5"
+            }
+          },
+          {
+            "threshold": 0.884,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/4"
+            }
+          },
+          {
+            "threshold": 0.918,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/3"
+            }
+          },
+          {
+            "threshold": 0.952,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/2"
+            }
+          },
+          {
+            "threshold": 0.986,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/1"
+            }
+          },
+          {
+            "threshold": 1,
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/arcade_displays/visible_boss_hp/0"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "item/server_menu/smithingtable/button_held"
+  }
+}

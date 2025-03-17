@@ -17,16 +17,7 @@
               "components": {
                 "minecraft:max_stack_size": 99,
                 "!minecraft:jukebox_playable": {},
-                "minecraft:item_model": "minecraft:extra/enchplus_items"
-              }
-            },
-            {
-              "function": "minecraft:set_custom_model_data",
-              "floats": {
-                "values": [
-                  1
-                ],
-                "mode": "replace_all"
+                "minecraft:item_model": "minecraft:enchplus_items/soul_essence"
               }
             },
             {
@@ -101,16 +92,7 @@
               "components": {
                 "minecraft:max_stack_size": 99,
                 "!minecraft:jukebox_playable": {},
-                "minecraft:item_model": "minecraft:extra/enchplus_items"
-              }
-            },
-            {
-              "function": "minecraft:set_custom_model_data",
-              "floats": {
-                "values": [
-                  1
-                ],
-                "mode": "replace_all"
+                "minecraft:item_model": "minecraft:enchplus_items/soul_essence"
               }
             },
             {
