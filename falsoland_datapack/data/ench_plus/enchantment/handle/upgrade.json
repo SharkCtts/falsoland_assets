@@ -1,5 +1,11 @@
 {
-  "description": " ",
+  "description": [
+    "",
+    {
+      "text": "▶ Adaptabilidad",
+      "color": "dark_gray"
+    }
+  ],
   "supported_items": "#ench_plus:diamond",
   "weight": 1,
   "max_level": 1,

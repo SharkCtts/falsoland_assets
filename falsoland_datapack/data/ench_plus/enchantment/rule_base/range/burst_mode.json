@@ -43,46 +43,6 @@
         "affected": "victim",
         "effect": {
           "type": "minecraft:run_function",
-          "function": "lib_marked:verify_entity"
-        },
-        "requirements": {
-          "condition": "minecraft:all_of",
-          "terms": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type": "#lib_marked:can_be_marked"
-              }
-            },
-            {
-              "condition": "minecraft:inverted",
-              "term": {
-                "condition": "minecraft:entity_scores",
-                "entity": "this",
-                "scores": {
-                  "lib.marked": {
-                    "min": 1,
-                    "max": 2147483647
-                  }
-                }
-              }
-            },
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "attacker",
-              "predicate": {
-                "type": "minecraft:player"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "enchanted": "attacker",
-        "affected": "victim",
-        "effect": {
-          "type": "minecraft:run_function",
           "function": "ench_plus:enchantment/range/burst_mode/trigger_base"
         },
         "requirements": {

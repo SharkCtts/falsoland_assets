@@ -42,6 +42,7 @@
     "minecraft:unbreaking",
     "minecraft:infinity",
     "minecraft:mending",
+    "ench_plus:handle/upgrade",
     "ench_plus:handle/held_none",
     "ench_plus:handle/held_leather",
     "ench_plus:handle/held_copper",
