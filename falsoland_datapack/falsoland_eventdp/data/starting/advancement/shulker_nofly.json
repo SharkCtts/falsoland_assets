@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "effect_clear": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:levitation": {}
+        },
+        "source": {
+          "type": "minecraft:shulker",
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "starting:shulker_nofly"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "starting:shulker_nofly"
+  }
+}

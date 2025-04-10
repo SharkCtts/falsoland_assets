@@ -151,5 +151,35 @@
 		"sounds": [
 			{"name":"arcade/lobby/precipice", "stream": true, "attenuation_distance": 64}
 		]
+	},
+	"music_disc.left_alone": {
+		"category": "record",
+		"sounds": [
+			{"name":"music_disc/left_alone", "stream": true, "attenuation_distance": 64}
+		]
+	},
+	"music_disc.never_fade_away": {
+		"category": "record",
+		"sounds": [
+			{"name":"music_disc/never_fade_away", "stream": true, "attenuation_distance": 64}
+		]
+	},
+	"music_disc.quiet_and_falling": {
+		"category": "record",
+		"sounds": [
+			{"name":"music_disc/quiet_and_falling", "stream": true, "attenuation_distance": 64}
+		]
+	},
+	"music_disc.the_deserving": {
+		"category": "record",
+		"sounds": [
+			{"name":"music_disc/the_deserving", "stream": true, "attenuation_distance": 64}
+		]
+	},
+	"music_disc.theme_of_the_lantern_festival_lofi": {
+		"category": "record",
+		"sounds": [
+			{"name":"music_disc/theme_of_the_lantern_festival_lofi", "stream": true, "attenuation_distance": 64}
+		]
 	}
 }

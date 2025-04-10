@@ -1,0 +1,10 @@
+{
+    "comparator_output": 15,
+    "description": {
+        "text": "NAME"
+    },
+    "length_in_seconds": 1.0,
+    "sound_event": {
+		"sound_id": "minecraft:music_disc."
+	}
+}
