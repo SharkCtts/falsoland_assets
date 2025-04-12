@@ -1,4 +1,5 @@
 {
+  "soundCategory.record": "Sonidos con derechos de autor",
   "enchant.ambush_on":"Jugador(a) busca una victima",
   "enchant.ambush_off": "Victima es emboscada",
   "enchant.chainreac_by": "Jugador(a) recibe una descarga",
@@ -5884,7 +5885,6 @@
   "sleep.skipping_night": "Sleeping through this night",
   "slot.only_single_allowed": "Only single slots allowed, got '%s'",
   "slot.unknown": "Unknown slot '%s'",
-  "soundCategory.ambient": "Ambient/Environment",
   "soundCategory.block": "Blocks",
   "soundCategory.hostile": "Hostile Creatures",
   "soundCategory.master": "Master Volume",

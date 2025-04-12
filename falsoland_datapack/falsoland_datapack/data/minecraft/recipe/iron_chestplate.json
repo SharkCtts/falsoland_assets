@@ -2,12 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "X": "minecraft:iron_ingot"
+    "X": "minecraft:iron_ingot",
+	"Y": "minecraft:iron_block"
   },
   "pattern": [
     "X X",
-    "XXX",
-    "XXX"
+    "YXY",
+    "YXY"
   ],
   "result": {
     "count": 1,
