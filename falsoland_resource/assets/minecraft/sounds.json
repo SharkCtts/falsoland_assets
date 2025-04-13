@@ -173,9 +173,12 @@
 			{"name":"music_disc/theme_of_the_lantern_festival_lofi", "stream": true, "attenuation_distance": 64}
 		]
 	},
-	"starting.play_only.ancestry": {
+	"lobby.random_music": {
 		"sounds": [
-			{"name":"music/game/ancestry", "stream": true}
+			{"name":"music_lobby/0", "stream": true},
+			{"name":"music_lobby/dalarna", "stream": true},
+			{"name":"music_lobby/halland", "stream": true},
+			{"name":"music_lobby/waterlust", "stream": true}
 		]
-	}
+	},
 }

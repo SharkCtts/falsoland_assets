@@ -1,0 +1,33 @@
+{
+  "parent": "progress:fase_1/root",
+  "criteria": {
+    "get_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:stone_tool_materials"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Fabrica un pico y consigue piedra labrada por primera vez."
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:wooden_pickaxe"
+    },
+    "title": {
+      "text": "Edad de piedra"
+    }
+  },
+  "requirements": [
+    [
+      "get_stone"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

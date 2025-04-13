@@ -1,0 +1,33 @@
+{
+  "parent": "progress:fase_1/mine_stone",
+  "criteria": {
+    "stone_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stone_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Fabrica un pico de piedra por primera vez."
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:stone_pickaxe"
+    },
+    "title": {
+      "text": "Una simple mejora..."
+    }
+  },
+  "requirements": [
+    [
+      "stone_pickaxe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

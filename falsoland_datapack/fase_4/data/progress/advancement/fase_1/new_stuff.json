@@ -1,0 +1,47 @@
+{
+  "parent": "progress:fase_1/mine_stone",
+  "criteria": {
+    "stone_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": [
+                    "ench_plus:handle/held_blaze",
+                    "ench_plus:handle/held_breeze",
+                    "ench_plus:handle/held_copper",
+                    "ench_plus:handle/held_gold",
+                    "ench_plus:handle/held_leather",
+                    "ench_plus:handle/held_netherite",
+                    "ench_plus:handle/held_none"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Manten pulsado [Agachar] + [Interactuar] sobre una mesa de herreria y mejora un arma."
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:smithing_table"
+    },
+    "title": {
+      "text": "Es hora de mejorar"
+    }
+  },
+  "requirements": [
+    [
+      "stone_pickaxe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
