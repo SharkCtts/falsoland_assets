@@ -180,5 +180,5 @@
 			{"name":"music_lobby/halland", "stream": true},
 			{"name":"music_lobby/waterlust", "stream": true}
 		]
-	},
+	}
 }

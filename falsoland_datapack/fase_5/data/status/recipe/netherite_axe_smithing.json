@@ -21,21 +21,7 @@
             "amount": -3, 
             "operation": "add_value", 
             "slot": "hand" 
-          }, 
-          { 
-            "type": "minecraft:entity_interaction_range", 
-            "id": "minecraft:item_damage", 
-            "amount": 16, 
-            "operation": "add_value", 
-            "slot": "hand" 
-          }, 
-          { 
-            "type": "minecraft:block_interaction_range", 
-            "id": "minecraft:item_damage", 
-            "amount": 16, 
-            "operation": "add_value", 
-            "slot": "hand" 
-          } 
+          }
         ] 
       } 
     }, 

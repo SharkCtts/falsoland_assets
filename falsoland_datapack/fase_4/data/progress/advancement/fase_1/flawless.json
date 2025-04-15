@@ -1,0 +1,31 @@
+{
+  "parent": "progress:fase_1/root",
+  "criteria": {
+    "iron_pickaxe": {
+      "conditions": {
+        "player": {
+          "nbt": "{Health:0.0f}"
+        }
+      },
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Felicidades, al menos no fue en una raid..."
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:skeleton_skull"
+    },
+    "title": {
+      "text": "THERE GOES THE FLAWLESS..."
+    }
+  },
+  "requirements": [
+    [
+      "iron_pickaxe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

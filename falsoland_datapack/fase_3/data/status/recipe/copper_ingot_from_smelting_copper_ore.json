@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "category": "misc",
-  "cookingtime": 100,
+  "cookingtime": 220,
   "experience": 0.7,
   "group": "copper_ingot",
   "ingredient": "minecraft:copper_ore",

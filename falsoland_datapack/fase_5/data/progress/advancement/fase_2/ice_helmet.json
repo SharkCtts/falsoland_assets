@@ -1,0 +1,50 @@
+{
+  "parent": "progress:fase_2/root",
+  "criteria": {
+    "entered_nether": {
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "nether:icehelmet"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "announce_to_chat": true,
+    "description": {
+      "text": "Equipa un Casco de hielo para no morir sofocado en el Nether."
+    },
+    "icon": {
+      "components": {
+        "minecraft:item_model": "minecraft:server_items/ice_helmet",
+        "minecraft:max_damage": 500,
+        "minecraft:damage": 1,
+        "minecraft:max_stack_size": 1
+      },
+      "count": 1,
+      "id": "minecraft:stick"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Cerebro congelado"
+    }
+  },
+  "requirements": [
+    [
+      "entered_nether"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

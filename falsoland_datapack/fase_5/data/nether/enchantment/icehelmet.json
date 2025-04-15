@@ -1,0 +1,64 @@
+{
+  "anvil_cost": 4,
+  "description": "Entorno de hielo",
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:time_check",
+              "value": {
+                "min": 1,
+                "max": 3
+              },
+              "period": 100
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "dimension": "minecraft:the_nether"
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": 1
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:bubble_pop"
+          },
+          "horizontal_position": {
+            "type": "entity_position"
+          },
+          "vertical_position": {
+            "type": "entity_position"
+          },
+          "horizontal_velocity": {},
+          "vertical_velocity": {},
+          "speed": 0.1
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 25
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 25
+  },
+  "slots": [
+    "head"
+  ],
+  "supported_items": "minecraft:debug_stick",
+  "weight": 2
+}
