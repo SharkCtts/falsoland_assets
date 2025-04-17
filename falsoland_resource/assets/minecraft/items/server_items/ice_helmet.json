@@ -25,6 +25,10 @@
           "model": "minecraft:item/server_items/ice_helmet/state_2"
         }
       }
-    ]
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/server_items/ice_helmet/state_0"
+    }
   }
 }

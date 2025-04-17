@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_5",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:server_discs/never_fade_away",
+                "minecraft:jukebox_playable": {
+                  "song": "custom:never_fade_away"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

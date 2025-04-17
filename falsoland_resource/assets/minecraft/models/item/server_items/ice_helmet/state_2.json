@@ -1,7 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "item/server_items/ice_helmet/state_2"
+		"1": "item/server_items/ice_helmet/state_2",
+		"particle": "item/server_items/ice_helmet/state_2"
 	},
 	"elements": [
 		{

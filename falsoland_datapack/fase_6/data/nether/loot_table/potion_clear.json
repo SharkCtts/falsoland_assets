@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:use_remainder": {},
+                "minecraft:consumable": {
+                  "consume_seconds": 4,
+                  "animation": "drink",
+                  "sound": "minecraft:entity.generic.drink",
+                  "has_consume_particles": false,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:remove_effects",
+                      "effects": [
+                        "minecraft:bad_omen",
+                        "minecraft:blindness",
+                        "minecraft:darkness",
+                        "minecraft:hunger",
+                        "minecraft:infested",
+                        "minecraft:instant_damage",
+                        "minecraft:levitation",
+                        "minecraft:nausea",
+                        "minecraft:mining_fatigue",
+                        "minecraft:oozing",
+                        "minecraft:poison",
+                        "minecraft:raid_omen",
+                        "minecraft:slowness",
+                        "minecraft:trial_omen",
+                        "minecraft:weakness",
+                        "minecraft:weaving",
+                        "minecraft:wither"
+                      ]
+                    }
+                  ]
+                },
+                "minecraft:potion_contents": {
+                  "custom_color": 7457990
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 20,
+                  "cooldown_group": "nether_potion_clear"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": "Poción de purificación",
+              "target": "custom_name"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

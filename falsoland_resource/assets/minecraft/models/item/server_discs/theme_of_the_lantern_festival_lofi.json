@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/server_discs/theme_of_the_lantern_festival_lofi"
+    }
+}
