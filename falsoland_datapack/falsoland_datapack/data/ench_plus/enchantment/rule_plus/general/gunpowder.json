@@ -1,37 +1,21 @@
 {
-  "description": [
-    [
-      "",
-	  {
-        "text": "| ",
-        "color": "gold",
-        "italic": false,
-        "bold": true
-      },
-      {
-        "translate": "ench_plus.gunpowder.name",
-        "color": "yellow",
-            "bold": false
-      },
-      {
-        "translate": "ench_plus.gunpowder.lore",
-        "fallback": " ",
-        "color": "white"
-      }
-    ]
-  ],
+  "description": {
+    "translate": "ench_plus.gunpowder.name",
+    "color": "yellow",
+    "bold": false
+  },
   "supported_items": "#ench_plus:global",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
   "max_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
-  "anvil_cost": 2147483647,
+  "anvil_cost": 1,
   "slots": [
     "mainhand",
     "offhand"

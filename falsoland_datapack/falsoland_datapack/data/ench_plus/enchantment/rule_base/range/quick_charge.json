@@ -1,37 +1,21 @@
 {
-  "description": [
-    [
-      "",
-	  {
-        "text": "| ",
-        "color": "dark_aqua",
-        "italic": false,
-        "bold": true
-      },
-      {
+  "description": {
         "translate": "ench_plus.quick_charge.name",
         "color": "aqua",
         "bold": false
       },
-      {
-        "translate": "ench_plus.quick_charge.lore",
-        "fallback": " ",
-        "color": "white"
-      }
-    ]
-  ],
   "supported_items": "minecraft:crossbow",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
   "max_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
-  "anvil_cost": 2147483647,
+  "anvil_cost": 1,
   "slots": [
     "mainhand",
     "offhand"

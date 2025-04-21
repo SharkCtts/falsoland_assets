@@ -1,34 +1,18 @@
 {
-  "description": [
-    [
-      "",
-	  {
-        "text": "| ",
-        "color": "dark_aqua",
-        "italic": false,
-        "bold": true
-      },
-      {
-        "translate": "ench_plus.infection.name",
-        "color": "aqua",
-        "bold": false
-      },
-      {
-        "translate": "ench_plus.infection.lore",
-        "fallback": " ",
-        "color": "white"
-      }
-    ]
-  ],
+  "description": {
+    "translate": "ench_plus.infection.name",
+    "color": "aqua",
+    "bold": false
+  },
   "supported_items": "#ench_plus:sword",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
   "max_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
   "anvil_cost": 2147483647,

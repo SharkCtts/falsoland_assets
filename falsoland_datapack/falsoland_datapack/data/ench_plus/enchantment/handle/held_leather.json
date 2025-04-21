@@ -22,14 +22,14 @@
   "weight": 1,
   "max_level": 1,
   "min_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
   "max_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
-  "anvil_cost": 2147483647,
+  "anvil_cost": 1,
   "slots": [
     "mainhand",
     "offhand"
@@ -41,8 +41,16 @@
           "type": "minecraft:remove_binomial",
           "chance": {
             "type": "minecraft:fraction",
-            "numerator": 1,
-            "denominator": 2
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 1,
+              "per_level_above_first": 0
+            },
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 2,
+              "per_level_above_first": 0
+            }
           }
         }
       }

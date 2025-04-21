@@ -1,5 +1,5 @@
 {
-	"soundCategory.record": "Audios con derechos de autor",
+	"soundCategory.record": "Sonidos con derechos de autor",
 	
 	"enchant.ambush_on":"Jugador(a) busca una victima",
 	"enchant.ambush_off": "Victima es emboscada",
@@ -42,7 +42,7 @@
 	"ench_plus.gunpowder.name": "Ataque de pólvora",
 	"ench_plus.radiant.name": "Golpe radiante",
 	"ench_plus.soul_steal.name": "Fragmentador de almas",
-	"ench_plus.ambush.name": "Falsa alianza",
+	"ench_plus.ambush.name": "Emboscada",
 	"ench_plus.anger_mode.name": "Furia oscura",
 	"ench_plus.banshee_was_here.name": "Filo del herrero",
 	"ench_plus.breakfast.name": "Golpe del apicultor",
@@ -63,7 +63,7 @@
 	"ench_plus.power.name": "Flecha afilada",
 	"ench_plus.quick_charge.name": "Carga rapida",
 	"ench_plus.quiver_overload.name": "Carcaj desbordado",
-	"ench_plus.ricochet.name": "Munición de rebote",
+	"ench_plus.ricochet.name": "Proyectil de rebote",
 	"ench_plus.shulker_boo.name": "Susto de shulker",
 	"ench_plus.slime_hit.name": "Empuje de slime",
 	"ench_plus.efficiency.name": "Eficiencia",

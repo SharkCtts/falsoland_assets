@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "criteria_1": {
+    "criteria_1_a": {
       "trigger": "minecraft:default_block_use",
       "conditions": {
         "player": [
@@ -102,16 +102,23 @@
         ]
       }
     },
-    "criteria_2": {
-      "trigger": "minecraft:location"
+    "criteria_1_b": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "effects": {
+            "minecraft:wind_charged": {
+              "amplifier": 255
+            }
+          }
+        }
+      }
     }
   },
   "requirements": [
     [
-      "criteria_1"
-    ],
-    [
-      "criteria_2"
+      "criteria_1_a",
+      "criteria_1_b"
     ]
   ],
   "rewards": {

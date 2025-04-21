@@ -22,14 +22,14 @@
   "weight": 1,
   "max_level": 1,
   "min_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
   "max_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
-  "anvil_cost": 2147483647,
+  "anvil_cost": 1,
   "slots": [
     "mainhand",
     "offhand"
@@ -41,8 +41,16 @@
           "type": "minecraft:remove_binomial",
           "chance": {
             "type": "minecraft:fraction",
-            "numerator": 1,
-            "denominator": 4
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 9,
+              "per_level_above_first": 0
+            },
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 10,
+              "per_level_above_first": 0
+            }
           }
         }
       }
@@ -157,6 +165,45 @@
               "range": 0
             }
           ]
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:time_check",
+              "value": {
+                "min": 0,
+                "max": 19
+              },
+              "period": 100
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "effects": {
+                  "minecraft:regeneration": {}
+                }
+              }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "held.netherite"
+              },
+              "range": 0
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": -8
         }
       }
     ]

@@ -1,37 +1,21 @@
 {
-  "description": [
-    [
-      "",
-	  {
-        "text": "| ",
-        "color": "gold",
-        "italic": false,
-        "bold": true
-      },
-      {
-        "translate": "ench_plus.perfect_parry.name",
-        "color": "yellow",
-        "bold": false
-      },
-      {
-        "translate": "ench_plus.perfect_parry.lore",
-        "fallback": " ",
-        "color": "white"
-      }
-    ]
-  ],
+  "description": {
+    "translate": "ench_plus.perfect_parry.name",
+    "color": "yellow",
+    "bold": false
+  },
   "supported_items": "#ench_plus:melee",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
   "max_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
-  "anvil_cost": 2147483647,
+  "anvil_cost": 1,
   "slots": [
     "mainhand"
   ],
@@ -40,7 +24,7 @@
       {
         "effect": {
           "type": "minecraft:multiply",
-          "factor": 3.0
+          "factor": 3
         },
         "requirements": {
           "condition": "minecraft:all_of",

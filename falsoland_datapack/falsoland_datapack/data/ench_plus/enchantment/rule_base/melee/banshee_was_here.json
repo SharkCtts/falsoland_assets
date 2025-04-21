@@ -1,37 +1,21 @@
 {
-  "description": [
-    [
-      "",
-      {
-        "text": "| ",
-        "color": "dark_aqua",
-        "italic": false,
-        "bold": true
-      },
-      {
-        "translate": "ench_plus.banshee_was_here.name",
-        "color": "aqua",
-        "bold": false
-      },
-      {
-        "translate": "ench_plus.banshee_was_here.lore",
-        "fallback": " ",
-        "color": "white"
-      }
-    ]
-  ],
+  "description": {
+    "translate": "ench_plus.banshee_was_here.name",
+    "color": "aqua",
+    "bold": false
+  },
   "supported_items": "#ench_plus:melee",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
   "max_cost": {
-    "base": 2147483647,
+    "base": 1,
     "per_level_above_first": 0
   },
-  "anvil_cost": 2147483647,
+  "anvil_cost": 1,
   "slots": [
     "mainhand"
   ],
@@ -40,7 +24,7 @@
       {
         "effect": {
           "type": "minecraft:multiply",
-          "factor": 0.3
+          "factor": 1.3
         },
         "requirements": {
           "condition": "minecraft:all_of",

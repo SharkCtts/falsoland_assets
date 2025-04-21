@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Resource Pack hecho para Falsoland",
+        "name": "FalsolandResourcePack",
+        "uuid": "ccb44b1a-7548-4d1e-8e53-5568a3435fb5",
+        "version": [1, 1, 0],
+        "min_engine_version": [ 1, 16, 0 ]
+    },
+    "modules": [
+        {
+            "description": "FalsolandResourcePack",
+            "type": "resources",
+            "uuid": "1261d1e0-96ca-4037-a251-1145fa526938",
+            "version": [1, 0, 11]
+        }
+    ]
+}

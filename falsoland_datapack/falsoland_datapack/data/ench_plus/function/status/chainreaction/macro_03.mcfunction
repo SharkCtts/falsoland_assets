@@ -1,2 +1,2 @@
-$damage @s 4 ench_plus:chain_reaction by $(entity_root) from $(entity_tree)
+$damage @s 4 ench_plus:chain_reaction by $(entity_root)
 $execute anchored eyes run summon minecraft:area_effect_cloud ^ ^ ^0.1 {CustomNameVisible:1b,Duration:18,CustomName:'{"font":"ench_status","italic":false,"text":"\\uE002","color":"#$(entity_rbgs)"}'}

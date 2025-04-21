@@ -41,8 +41,16 @@
           "type": "minecraft:remove_binomial",
           "chance": {
             "type": "minecraft:fraction",
-            "numerator": 1,
-            "denominator": 3
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 3,
+              "per_level_above_first": 0
+            },
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 5,
+              "per_level_above_first": 0
+            }
           }
         }
       }

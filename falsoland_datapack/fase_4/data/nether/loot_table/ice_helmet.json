@@ -17,7 +17,7 @@
                   },
                   "show_in_tooltip": false
                 },
-                "minecraft:max_damage": 321,
+                "minecraft:max_damage": 400,
                 "minecraft:equippable": {
                   "slot": "head",
                   "equip_sound": "minecraft:block.powder_snow.step",
@@ -36,7 +36,7 @@
                   ]
                 },
                 "minecraft:max_stack_size": 1,
-                "minecraft:damage": 1,
+                "minecraft:damage": 0,
                 "minecraft:item_name": "{\"text\":\"Casco de hielo\"}",
                 "minecraft:item_model": "minecraft:server_items/ice_helmet",
                 "minecraft:enchantment_glint_override": false

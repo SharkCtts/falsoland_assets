@@ -1,0 +1,34 @@
+{
+  "parent": "progress:fase_3/whos_the_pillager_now",
+  "criteria": {
+    "kill_pillager": {
+      "conditions": {
+        "entity": {
+          "type": "minecraft:illusioner"
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Durante una invasión, derrota a un Ilusionista."
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:emerald_block"
+    },
+    "title": {
+      "text": "¡¿No te acuerdas de mí?!"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "requirements": [
+    [
+      "kill_pillager"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
