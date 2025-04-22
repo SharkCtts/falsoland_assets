@@ -38,7 +38,7 @@
         },
         "effect": {
           "type": "minecraft:change_item_damage",
-          "amount": -3
+          "amount": -2
         }
       }
     ]

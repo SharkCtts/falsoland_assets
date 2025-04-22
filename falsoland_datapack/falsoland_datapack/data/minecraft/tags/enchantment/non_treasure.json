@@ -1,11 +1,15 @@
 {
   "values": [
+    "minecraft:nullfix",
+    "minecraft:density",
+    "minecraft:depth_strider",
     "minecraft:fire_protection",
-    "minecraft:feather_falling",
-    "minecraft:blast_protection",
+    "minecraft:lure",
     "minecraft:projectile_protection",
+    "minecraft:respiration",
     "minecraft:thorns",
-    "minecraft:breach",
-    "minecraft:impaling"
+    "minecraft:aqua_affinity",
+    "minecraft:binding_curse",
+    "minecraft:vanishing_curse"
   ]
 }

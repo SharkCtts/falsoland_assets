@@ -55,6 +55,20 @@
             "ascent": 60,
             "height": 60,
             "chars": ["\uE007"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/ench_status/shock_focus.png",
+            "ascent": 32,
+            "height": 32,
+            "chars": ["\uE008"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/ench_status/shock_spawn.png",
+            "ascent": 32,
+            "height": 32,
+            "chars": ["\uE009"]
         }
 		
     ]

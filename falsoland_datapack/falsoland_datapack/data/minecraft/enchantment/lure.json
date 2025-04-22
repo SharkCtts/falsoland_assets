@@ -10,8 +10,8 @@
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 5.0,
-            "per_level_above_first": 5.0
+            "base": 5,
+            "per_level_above_first": 5
           }
         }
       }
@@ -29,6 +29,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/debug_disabled",
+  "supported_items": "#minecraft:enchantable/fishing",
   "weight": 2
 }
