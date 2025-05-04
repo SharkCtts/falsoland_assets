@@ -2,7 +2,7 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
@@ -17,26 +17,74 @@
       ],
       "entries": [
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
-            },
-            {
-              "amplifier": {
-                "type": "minecraft:uniform",
-                "max": 4.0,
-                "min": 0.0
-              },
-              "function": "minecraft:set_ominous_bottle_amplifier"
+              "type": "minecraft:alternatives",
+              "children": [
+                {
+                  "type": "minecraft:loot_table",
+                  "value": {
+                    "type": "minecraft:entity",
+                    "pools": [
+                      {
+                        "rolls": 1,
+                        "entries": [
+                          {
+                            "type": "minecraft:loot_table",
+                            "value": "custom:falsoland_alter_worlds/swamp_island/potions/raid_omen_1"
+                          },
+                          {
+                            "type": "minecraft:loot_table",
+                            "value": "custom:falsoland_alter_worlds/swamp_island/potions/raid_omen_2"
+                          },
+                          {
+                            "type": "minecraft:loot_table",
+                            "value": "custom:falsoland_alter_worlds/swamp_island/potions/raid_omen_3"
+                          },
+                          {
+                            "type": "minecraft:loot_table",
+                            "value": "custom:falsoland_alter_worlds/swamp_island/potions/raid_omen_4"
+                          },
+                          {
+                            "type": "minecraft:loot_table",
+                            "value": "custom:falsoland_alter_worlds/swamp_island/potions/raid_omen_5"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "conditions": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "attacker",
+                      "predicate": {
+                        "effects": {
+                          "minecraft:hero_of_the_village": {}
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:ominous_bottle",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_ominous_bottle_amplifier",
+                      "amplifier": {
+                        "min": 0,
+                        "max": 4
+                      }
+                    }
+                  ]
+                }
+              ]
             }
-          ],
-          "name": "minecraft:ominous_bottle"
+          ]
         }
       ],
-      "rolls": 1.0
+      "rolls": 1
     }
   ],
   "random_sequence": "minecraft:entities/pillager"

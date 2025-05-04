@@ -1,0 +1,104 @@
+{
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "lib.rng": {
+                    "min": 0,
+                    "max": 40
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:any_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "equipment": {
+                        "mainhand": {
+                          "items": "minecraft:shield",
+                          "predicates": {
+                            "minecraft:enchantments": [
+                              {
+                                "enchantments": "ench_plus:armor/warlock_shield"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                      {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                          "equipment": {
+                            "offhand": {
+                              "predicates": {
+                                "minecraft:enchantments": [
+                                  {
+                                    "enchantments": "ench_plus:armor/warlock_shield"
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                          "condition": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "equipment": {
+                              "mainhand": {
+                                "items": "minecraft:shield",
+                                "predicates": {
+                                  "minecraft:enchantments": [
+                                    {
+                                      "enchantments": "ench_plus:armor/warlock_shield"
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "damage": {
+          "blocked": true
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ],
+  "rewards": {
+    "function": "ench_plus:enchantment/armor/warlock_shield/revoke"
+  },
+  "sends_telemetry_event": true
+}

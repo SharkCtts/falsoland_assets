@@ -24,7 +24,7 @@
       {
         "id": "minecraft:enchantment.efficiency",
         "attribute": "minecraft:mining_efficiency",
-        "amount": 29,
+        "amount": 40,
         "operation": "add_value"
       }
     ]

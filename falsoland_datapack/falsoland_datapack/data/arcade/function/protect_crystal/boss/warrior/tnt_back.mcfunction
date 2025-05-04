@@ -1,2 +1,0 @@
-execute on passengers if entity @s[type=minecraft:block_display] run data modify entity @s block_state.Name set value "minecraft:tnt"
-playsound minecraft:block.grass.place block @a[distance=..8] ~ ~ ~ 1 0.8

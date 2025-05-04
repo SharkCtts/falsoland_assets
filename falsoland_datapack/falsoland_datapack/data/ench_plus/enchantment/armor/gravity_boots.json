@@ -1,0 +1,74 @@
+{
+  "description": {
+    "translate": "ench_plus.gravity_boots.name"
+  },
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 2,
+  "max_level": 3,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_cost": {
+    "base": 4,
+    "per_level_above_first": 2
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.gravity_boots"
+              },
+              "range": 0
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:gravity",
+          "id": "falsoland:gravity_boots",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": -0.02,
+            "per_level_above_first": -0.02
+          },
+          "operation": "add_value"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.gravity_boots"
+              },
+              "range": 0
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:safe_fall_distance",
+          "id": "falsoland:gravity_boots_fall",
+          "amount": 4,
+          "operation": "add_value"
+        }
+      }
+    ]
+  }
+}

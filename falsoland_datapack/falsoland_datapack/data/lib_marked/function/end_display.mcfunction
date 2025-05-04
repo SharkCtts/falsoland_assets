@@ -1,4 +1,4 @@
-data modify entity @s PortalCooldown set value 199999999980
+data modify entity @s PortalCooldown set value 199999980
 execute on vehicle run return fail
 
 

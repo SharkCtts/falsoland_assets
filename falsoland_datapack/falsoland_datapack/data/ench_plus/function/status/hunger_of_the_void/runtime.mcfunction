@@ -1,0 +1,1 @@
+function ench_plus:status/hunger_of_the_void/macro_01 with entity @s ArmorItems[3].components."minecraft:custom_data"

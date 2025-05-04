@@ -1,0 +1,7 @@
+{
+  "function": "minecraft:set_enchantments",
+  "enchantments": {
+    "ench_enemy:golden_heart": 0,
+    "ench_enemy:no_melee": 0
+  }
+}

@@ -1,3 +1,0 @@
-$execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"arcade:activity","path":"data.boss.type"},"range":3} run function arcade:protect_crystal/boss/illusion/summon {"health":"$(health)","lvl":$(lvl)}
-$execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"arcade:activity","path":"data.boss.type"},"range":2} run function arcade:protect_crystal/boss/warrior/summon {"health":"$(health)","lvl":$(lvl)}
-$execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"arcade:activity","path":"data.boss.type"},"range":1} run function arcade:protect_crystal/boss/witch/summon {"health":"$(health)","lvl":$(lvl)}

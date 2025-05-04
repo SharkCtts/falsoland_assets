@@ -1,15 +1,14 @@
 {
   "values": [
     "minecraft:nullfix",
-    "minecraft:density",
     "minecraft:depth_strider",
     "minecraft:fire_protection",
-    "minecraft:lure",
     "minecraft:projectile_protection",
     "minecraft:respiration",
     "minecraft:thorns",
     "minecraft:aqua_affinity",
-    "minecraft:binding_curse",
-    "minecraft:vanishing_curse"
+    "ench_enemy:golden_heart",
+    "ench_enemy:no_melee",
+    "ench_enemy:watch_me"
   ]
 }

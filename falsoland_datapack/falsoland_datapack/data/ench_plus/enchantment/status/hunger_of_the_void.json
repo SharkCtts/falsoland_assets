@@ -1,0 +1,61 @@
+{
+  "description": "status - hunger of the void",
+  "supported_items": "minecraft:air",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:prevent_equipment_drop": {},
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "ench_plus:status/hunger_of_the_void/killtask"
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "effects": {
+                    "minecraft:invisibility": {
+                      "amplifier": 255
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 30
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "ench_plus:status/hunger_of_the_void/runtime"
+        }
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "description": {
-    "translate": "ench_plus.final_death.name",
+    "translate": "ench_plus.village_pillage.name",
     "color": "yellow",
     "bold": false
   },
@@ -34,7 +34,7 @@
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "#ench_plus:final_death"
+                "type": "#ench_plus:pillager"
               }
             },
             {
@@ -68,7 +68,7 @@
               "value": {
                 "type": "minecraft:storage",
                 "storage": "lib:enchplus_disable",
-                "path": "list.final_death"
+                "path": "list.village_pillage"
               },
               "range": 0
             }

@@ -1,0 +1,1 @@
+item modify entity @s weapon.mainhand ench_enemy:not_for_player

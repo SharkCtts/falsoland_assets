@@ -17,7 +17,12 @@
               "components": {
                 "minecraft:max_stack_size": 99,
                 "!minecraft:jukebox_playable": {},
-                "minecraft:item_model": "minecraft:enchplus_items/soul_essence"
+                "minecraft:item_model": "minecraft:enchplus_items/soul_essence",
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1000
+                  ]
+                }
               }
             },
             {
@@ -71,96 +76,6 @@
               "tag": "{lucky_soul:1b}"
             }
           ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:killed_by_player",
-          "inverse": true
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:music_disc_11",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:max_stack_size": 99,
-                "!minecraft:jukebox_playable": {},
-                "minecraft:item_model": "minecraft:enchplus_items/soul_essence"
-              }
-            },
-            {
-              "function": "minecraft:set_name",
-              "entity": "this",
-              "name": {
-                "text": "Esencia de alma",
-                "color": "aqua",
-                "italic": false
-              }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "entity": "this",
-              "lore": [
-                {
-                  "translate": "item_lore.soul_essence.line_1",
-                  "color": "yellow",
-                  "italic": false
-                },
-                {
-                  "translate": "item_lore.soul_essence.line_2",
-                  "color": "yellow",
-                  "italic": false
-                },
-                {
-                  "translate": "item_lore.soul_essence.line_3",
-                  "color": "yellow",
-                  "italic": false
-                },
-                {
-                  "translate": "item_lore.soul_essence.line_4",
-                  "color": "yellow",
-                  "italic": false
-                },
-                {
-                  "translate": "item_lore.soul_essence.line_5",
-                  "color": "yellow",
-                  "italic": false
-                },
-                {
-                  "translate": "item_lore.soul_essence.line_6",
-                  "color": "yellow",
-                  "italic": false
-                }
-              ],
-              "mode": "replace_all"
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{lucky_soul:1b}"
-            }
-          ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "type_specific": {
-              "type": "minecraft:player",
-              "gamemode": [
-                "creative",
-                "spectator"
-              ]
-            }
-          }
         }
       ]
     }

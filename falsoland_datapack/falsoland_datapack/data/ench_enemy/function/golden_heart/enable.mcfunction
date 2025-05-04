@@ -1,0 +1,2 @@
+particle minecraft:end_rod ~ ~ ~ 0.2 0.4 0.2 0.08 4
+execute as @e[type=!minecraft:player,nbt=!{active_effects:[{id:"minecraft:absorption"}]},nbt={ArmorItems:[]},distance=..6,sort=random,limit=10] run function ench_enemy:golden_heart/per_enemy

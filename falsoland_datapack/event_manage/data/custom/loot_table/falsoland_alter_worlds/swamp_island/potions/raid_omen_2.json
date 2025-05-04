@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 985610,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:raid_omen",
+                      "amplifier": 1,
+                      "duration": 1800,
+                      "ambient": false,
+                      "show_particles": true,
+                      "show_icon": true
+                    }
+                  ]
+                },
+                "minecraft:custom_name": "{\"text\":\"Poción de presagio de invación\",\"italic\":false}"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

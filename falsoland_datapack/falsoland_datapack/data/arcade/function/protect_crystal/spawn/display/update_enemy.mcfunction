@@ -1,2 +1,0 @@
-execute on passengers if entity @s[tag=arcade_display_enemies] store result entity @s item.components."minecraft:damage" int 1 run team list arcade_horde
-execute at @n[team=arcade_horde] run teleport @n[tag=arcade_nearenemy] ~ 36 ~

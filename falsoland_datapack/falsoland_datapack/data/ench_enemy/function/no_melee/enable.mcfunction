@@ -1,0 +1,2 @@
+execute as @a[distance=..6] if predicate {"condition":"minecraft:inverted","term":{"condition":"minecraft:entity_properties","entity":"this","predicate":{"effects":{"minecraft:weakness":{}}}}} at @s run function ench_enemy:no_melee/per_player
+particle minecraft:raid_omen ~ ~ ~ 0.2 0.4 0.2 0.6 4

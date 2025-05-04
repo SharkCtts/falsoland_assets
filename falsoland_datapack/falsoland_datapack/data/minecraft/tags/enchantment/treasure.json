@@ -14,6 +14,10 @@
      "minecraft:unbreaking",
      "minecraft:blast_protection",
      "minecraft:breach",
-     "minecraft:wind_burst"
+     "minecraft:wind_burst",
+     "ench_plus:armor/breeze_shield",
+     "ench_plus:armor/cooldown_my_soul",
+     "ench_plus:armor/gravity_boots",
+     "ench_plus:armor/warlock_shield"
   ]
 }

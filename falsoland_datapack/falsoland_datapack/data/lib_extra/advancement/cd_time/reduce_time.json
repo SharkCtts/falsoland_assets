@@ -68,7 +68,7 @@
           ]
         }
       },
-      "burstmode": {
+      "hungerofvoid": {
         "trigger": "minecraft:location",
         "conditions": {
           "player": [
@@ -76,7 +76,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "ench_burstmode_cooldown": {
+                "ench_hungerofvoid_cooldown": {
                   "min": 1,
                   "max": 2147483647
                 }
@@ -92,7 +92,7 @@
         "radiant",
         "chain_reaction",
         "breakfast",
-        "burstmode"
+        "hungerofvoid"
       ]
     ],
     "rewards": {

@@ -1,2 +1,2 @@
-execute on attacker run scoreboard players set @s ench_burstmode_cooldown 202
+execute on attacker run scoreboard players set @s ench_burstmode_status 202
 execute on attacker run function ench_plus:setup/sound {"id":"minecraft:enchant.burst_on","to":"@a[distance=..9]","typ":"player","vol":"0.5","pit":"1"}

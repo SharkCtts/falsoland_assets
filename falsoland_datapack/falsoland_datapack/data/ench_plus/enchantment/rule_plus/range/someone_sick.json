@@ -1,0 +1,1704 @@
+{
+    "description": {
+      "translate": "ench_plus.someone_sick.name",
+      "color": "yellow",
+      "bold": false
+    },
+    "supported_items": "#ench_plus:range",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+      "base": 1,
+      "per_level_above_first": 0
+    },
+    "max_cost": {
+      "base": 1,
+      "per_level_above_first": 0
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "mainhand",
+      "offhand"
+    ],
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:speed": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:speed",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:slowness": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:slowness",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:haste": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:haste",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:mining_fatigue": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:mining_fatigue",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:strength": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:strength",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:instant_health": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:instant_health",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:instant_damage": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:instant_damage",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:jump_boost": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:jump_boost",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:nausea": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:nausea",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:regeneration": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:regeneration",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:resistance": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:resistance",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:fire_resistance": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:fire_resistance",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:water_breathing": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:water_breathing",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:invisibility": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:invisibility",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:blindness": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:blindness",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:night_vision": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:night_vision",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:hunger": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:hunger",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:weakness": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:weakness",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:poison": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:poison",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:wither": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:wither",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:health_boost": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:health_boost",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:absorption": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:absorption",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:saturation": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:saturation",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:glowing": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:glowing",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:levitation": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:levitation",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:luck": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:luck",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:unluck": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:unluck",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:slow_falling": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:slow_falling",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:conduit_power": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:conduit_power",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:dolphins_grace": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:dolphins_grace",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:bad_omen": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:bad_omen",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:hero_of_the_village": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:hero_of_the_village",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:darkness": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:darkness",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:trial_omen": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:trial_omen",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:raid_omen": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:raid_omen",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:wind_charged": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:wind_charged",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:weaving": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:weaving",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:oozing": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:oozing",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:value_check",
+                "value": {
+                  "type": "minecraft:storage",
+                  "storage": "lib:enchplus_disable",
+                  "path": "list.someone_sick"
+                },
+                "range": 0
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "effects": {
+                    "minecraft:infested": {}
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows",
+                  "nbt": "{crit: 1b}"
+                }
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:infested",
+            "min_duration": 30,
+            "max_duration": 30,
+            "min_amplifier": 2,
+            "max_amplifier": 2
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        }
+      ]
+    }
+  }

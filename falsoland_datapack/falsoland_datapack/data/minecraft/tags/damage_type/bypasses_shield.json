@@ -2,6 +2,7 @@
   "values": [
     "#minecraft:bypasses_armor",
     "minecraft:falling_anvil",
-    "minecraft:falling_stalactite"
+    "minecraft:falling_stalactite",
+    "ench_plus:hunger_of_the_void"
   ]
 }

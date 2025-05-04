@@ -1,5 +1,0 @@
-effect give @a[distance=..8] resistance 4 8 true
-
-execute if predicate {"condition":"minecraft:time_check","value":{"min":0,"max":20},"period":90} run return run summon firework_rocket ~ ~3 ~ {LifeTime:40,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"creeper",has_twinkle:true,has_trail:true,colors:[I;16711850],fade_colors:[I;16711680]}]}}}}
-execute if predicate {"condition":"minecraft:time_check","value":{"min":21,"max":40},"period":90} run return run summon firework_rocket ~ ~3 ~ {LifeTime:40,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",has_trail:true,colors:[I;16762898,16718602],fade_colors:[I;253439,720748]}]}}}}
-summon firework_rocket ~ ~3 ~ {LifeTime:40,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",has_twinkle:true,colors:[I;720805,5898022],fade_colors:[I;4262143,11731199]}]}}}}

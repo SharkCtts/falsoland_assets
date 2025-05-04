@@ -1,0 +1,30 @@
+{
+  "values": [
+    "minecraft:nullfix",
+    "minecraft:density",
+    "minecraft:depth_strider",
+    "minecraft:fire_protection",
+    "minecraft:lure",
+    "minecraft:projectile_protection",
+    "minecraft:respiration",
+    "minecraft:thorns",
+    "minecraft:aqua_affinity",
+    "minecraft:binding_curse",
+    "minecraft:vanishing_curse",
+	  "minecraft:channeling",
+    "minecraft:feather_falling",
+    "minecraft:frost_walker",
+    "minecraft:impaling",
+    "minecraft:loyalty",
+    "minecraft:luck_of_the_sea",
+    "minecraft:mending",
+    "minecraft:protection",
+    "minecraft:riptide",
+    "minecraft:soul_speed",
+    "minecraft:swift_sneak",
+    "minecraft:unbreaking",
+    "minecraft:blast_protection",
+    "minecraft:breach",
+    "minecraft:wind_burst"
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "description": {
+    "translate": "ench_plus.hands_of_darkness.name",
+    "color": "aqua",
+    "bold": false
+  },
+  "supported_items": "#ench_plus:tool",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.hands_of_darkness"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:player",
+                  "level": {
+                    "min": 1,
+                    "max": 4
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:block_interaction_range",
+          "id": "falsoland:block_range_offhand",
+          "amount": 0.5,
+          "operation": "add_value"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.hands_of_darkness"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:player",
+                  "level": {
+                    "min": 5,
+                    "max": 9
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:block_interaction_range",
+          "id": "falsoland:block_range_offhand",
+          "amount": 1,
+          "operation": "add_value"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.hands_of_darkness"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:player",
+                  "level": {
+                    "min": 10,
+                    "max": 19
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:block_interaction_range",
+          "id": "falsoland:block_range_offhand",
+          "amount": 1.5,
+          "operation": "add_value"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.hands_of_darkness"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:player",
+                  "level": {
+                    "min": 20,
+                    "max": 2147483647
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:block_interaction_range",
+          "id": "falsoland:block_range_offhand",
+          "amount": 2,
+          "operation": "add_value"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.hands_of_darkness"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:player",
+                  "level": {
+                    "min": 1,
+                    "max": 4
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:entity_interaction_range",
+          "id": "falsoland:entity_range_offhand",
+          "amount": 0.5,
+          "operation": "add_value"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.hands_of_darkness"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:player",
+                  "level": {
+                    "min": 5,
+                    "max": 9
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:entity_interaction_range",
+          "id": "falsoland:entity_range_offhand",
+          "amount": 1,
+          "operation": "add_value"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.hands_of_darkness"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:player",
+                  "level": {
+                    "min": 10,
+                    "max": 19
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:entity_interaction_range",
+          "id": "falsoland:entity_range_offhand",
+          "amount": 1.5,
+          "operation": "add_value"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.hands_of_darkness"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:player",
+                  "level": {
+                    "min": 20,
+                    "max": 2147483647
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:entity_interaction_range",
+          "id": "falsoland:entity_range_offhand",
+          "amount": 2,
+          "operation": "add_value"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "list.hands_of_darkness"
+              },
+              "range": 0
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:player",
+                  "level": {
+                    "min": 20,
+                    "max": 2147483647
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:attack_speed",
+          "id": "falsoland:combat_offhand_penalization",
+          "amount": -1.5,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "head": {
+                      "predicates": {
+                        "minecraft:enchantments": [
+                          {
+                            "enchantments": "ench_plus:armor/cooldown_my_soul"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "chest": {
+                      "predicates": {
+                        "minecraft:enchantments": [
+                          {
+                            "enchantments": "ench_plus:armor/cooldown_my_soul"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "legs": {
+                      "predicates": {
+                        "minecraft:enchantments": [
+                          {
+                            "enchantments": "ench_plus:armor/cooldown_my_soul"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "feet": {
+                      "predicates": {
+                        "minecraft:enchantments": [
+                          {
+                            "enchantments": "ench_plus:armor/cooldown_my_soul"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "ench_plus:enchantment/armor/cooldown_my_soul/revoke"
+  },
+  "sends_telemetry_event": false
+}

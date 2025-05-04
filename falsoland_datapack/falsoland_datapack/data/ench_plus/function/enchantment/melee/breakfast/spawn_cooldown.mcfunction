@@ -1,4 +1,4 @@
 execute on attacker run scoreboard players set @s ench_breakfast_cooldown 60
-execute on attacker at @s run summon bee ~ ~1 ~ {PortalCooldown:199999999980,Silent:1b,CannotEnterHiveTicks:24000,AngerTime:24000,Tags:["breakfast_temp","no_ench_target"],ArmorItems:[{},{},{},{id:"minecraft:polished_blackstone_button",count:1,components:{"minecraft:custom_data":{hits:[0,0]}}}],active_effects:[{id:"minecraft:haste",duration:400,amplifier:-1b}],attributes:[{id:"minecraft:attack_damage",base:4}]}
+execute on attacker at @s run summon bee ~ ~1 ~ {PortalCooldown:1999999980,Silent:1b,CannotEnterHiveTicks:24000,AngerTime:24000,Tags:["breakfast_temp","no_ench_target"],ArmorItems:[{},{},{},{id:"minecraft:polished_blackstone_button",count:1,components:{"minecraft:custom_data":{hits:[0,0]}}}],active_effects:[{id:"minecraft:haste",duration:400,amplifier:-1b}],attributes:[{id:"minecraft:attack_damage",base:4}]}
 execute as @n[tag=breakfast_temp,distance=..1] run team join ench_nocollision @s
 playsound minecraft:block.beehive.exit player @a[distance=..8] ~ ~ ~ 2 1.3

@@ -1,1 +1,0 @@
-execute on passengers if entity @s[type=minecraft:item_display] run kill @s

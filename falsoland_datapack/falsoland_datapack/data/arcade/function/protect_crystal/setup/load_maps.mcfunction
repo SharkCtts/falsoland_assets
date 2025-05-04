@@ -1,3 +1,0 @@
-execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"arcade:activity","path":"data.setup.map"},"range":1} run return run function arcade:protect_crystal/setup/maps/forest
-execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"arcade:activity","path":"data.setup.map"},"range":2} run return run function arcade:protect_crystal/setup/maps/cave
-execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"arcade:activity","path":"data.setup.map"},"range":3} run return run function arcade:protect_crystal/setup/maps/oasisggz

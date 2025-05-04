@@ -1,0 +1,2 @@
+playsound minecraft:item.honeycomb.wax_on player @a[distance=..32] ~ ~ ~ 1 1.5
+$execute rotated ~ 0 positioned ^ ^ ^3.5 as @a[distance=..3,sort=random,limit=3$(tar)] run function ench_plus:enchantment/armor/warlock_shield/target

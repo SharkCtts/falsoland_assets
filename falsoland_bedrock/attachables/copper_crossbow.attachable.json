@@ -2,18 +2,18 @@
   "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "geyser_custom:copper_crossbow",
+      "identifier": "minecraft:copper_crossbow",
       "materials": {
         "default": "entity_alphatest",
         "enchanted": "entity_alphatest_glint"
       },
       "textures": {
         "default": "textures/items/crossbow/copper_crossbow",
-        "crossbow_pulling_0": "textures/items/crossbow/copper_crossbow_pulling_0",
-        "crossbow_pulling_1": "textures/items/crossbow/copper_crossbow_pulling_1",
-        "crossbow_pulling_2": "textures/items/crossbow/copper_crossbow_pulling_2",
-        "crossbow_arrow": "textures/items/crossbow/copper_crossbow_arrow",
-        "crossbow_rocket": "textures/items/crossbow/copper_crossbow_firework",
+        "crossbow_pulling_0": "textures/items/crossbow_pulling_0",
+        "crossbow_pulling_1": "textures/items/crossbow_pulling_1",
+        "crossbow_pulling_2": "textures/items/crossbow_pulling_2",
+        "crossbow_arrow": "textures/items/crossbow_arrow",
+        "crossbow_rocket": "textures/items/crossbow_firework",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {

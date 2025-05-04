@@ -1,5 +1,5 @@
 {
-  "description": "weak point-effect",
+  "description": "status - weak point",
   "supported_items": "minecraft:air",
   "weight": 1,
   "max_level": 1,

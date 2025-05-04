@@ -1,5 +1,5 @@
 {
-    "parent": "item/handheld",
+    "parent": "item/template_music_disc",
     "textures": {
         "layer0": "item/server_discs/left_alone"
     }
