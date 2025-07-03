@@ -173,11 +173,6 @@
 			{"name":"music_disc/theme_of_the_lantern_festival_lofi", "stream": true, "attenuation_distance": 64}
 		]
 	},
-	"music_disc.tears": {
-		"sounds": [
-			{"name":"music_disc/tears", "stream": true, "attenuation_distance": 64}
-		]
-	},
 	"music_disc.hello_sekai": {
 		"sounds": [
 			{"name":"music_disc/hello_sekai", "stream": true, "attenuation_distance": 64}
@@ -188,22 +183,17 @@
 			{"name":"music_disc/hello_sekai_event", "stream": true, "attenuation_distance": 64}
 		]
 	},
-	"music_disc.lava_chicken": {
+	"music_disc.roar_of_the_jungle_dragon": {
 		"sounds": [
-			{"name":"music_disc/lava_chicken", "stream": true, "attenuation_distance": 64}
+			{"name":"music_disc/roar_of_the_jungle_dragon", "stream": true, "attenuation_distance": 64}
 		]
-	},
+	}
 	"lobby.random_music": {
 		"sounds": [
 			{"name":"music_lobby/0", "stream": true},
 			{"name":"music_lobby/dalarna", "stream": true},
 			{"name":"music_lobby/halland", "stream": true},
 			{"name":"music_lobby/waterlust", "stream": true}
-		]
-	},
-	"music_disc.roar_of_the_jungle_dragon": {
-		"sounds": [
-			{"name":"music_disc/roar_of_the_jungle_dragon", "stream": true, "attenuation_distance": 64}
 		]
 	}
 }
