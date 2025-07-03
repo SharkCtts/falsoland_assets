@@ -2,60 +2,103 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "minecraft:deepslate_copper_ore",
               "conditions": [
                 {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
-                        }
-                      ]
-                    }
-                  }
+                  "condition": "minecraft:reference",
+                  "name": "ench_plus:tools/silk_touch"
                 }
-              ],
-              "name": "minecraft:deepslate_copper_ore"
+              ]
             },
             {
               "type": "minecraft:item",
+              "name": "minecraft:copper_ingot",
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "ench_plus:tools/magma_hit"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "ench_plus:tool/jackpot/copper",
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "ench_plus:tools/jackpot"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:raw_copper",
               "functions": [
                 {
-                  "add": false,
+                  "function": "minecraft:set_count",
                   "count": {
-                    "type": "minecraft:uniform",
-                    "max": 5.0,
-                    "min": 2.0
+                    "min": 0,
+                    "max": 4
                   },
-                  "function": "minecraft:set_count"
+                  "add": true
                 },
                 {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 0,
+                    "max": 5
+                  },
+                  "add": true,
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "ench_plus:rule_base/tool/fortune"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
                 },
                 {
-                  "function": "minecraft:explosion_decay"
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 0,
+                    "max": 15
+                  },
+                  "add": true,
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "ench_plus:rule_plus/tool/fortune"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
                 }
-              ],
-              "name": "minecraft:raw_copper"
+              ]
             }
           ]
         }
       ],
-      "rolls": 1.0
+      "rolls": 1
     }
-  ],
-  "random_sequence": "minecraft:blocks/deepslate_copper_ore"
+  ]
 }

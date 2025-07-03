@@ -30,6 +30,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/crossbow",
+  "supported_items": "#minecraft:enchantable/debug_disabled",
   "weight": 10
 }

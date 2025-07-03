@@ -2,17 +2,58 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:totem_of_undying"
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:totem_of_undying",
+              "functions": [
+                {
+                  "function": "minecraft:set_lore",
+                  "entity": "attacker",
+                  "lore": [
+                    [
+                      "",
+                      {
+                        "text": "Obtenido por ",
+                        "color": "white",
+                        "bold": false,
+                        "italic": false
+                      },
+                      {
+                        "selector": "@s",
+                        "color": "gold",
+                        "bold": true,
+                        "italic": false
+                      }
+                    ]
+                  ],
+                  "mode": "append"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:killed_by_player",
+                  "inverse": true
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:totem_of_undying"
+            }
+          ],
+          "functions": [],
+          "conditions": []
         }
       ],
-      "rolls": 1.0
+      "rolls": 1
     },
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "conditions": [
         {
           "condition": "minecraft:killed_by_player"
@@ -26,25 +67,43 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
+                "max": 1,
+                "min": 0
               },
               "function": "minecraft:set_count"
             },
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
+                "max": 1,
+                "min": 0
               },
               "enchantment": "minecraft:looting",
               "function": "minecraft:enchanted_count_increase"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "ench_plus:rule_base/general/golden_thief"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "enchantment": "ench_plus:rule_plus/general/golden_thief"
             }
           ],
           "name": "minecraft:emerald"
         }
       ],
-      "rolls": 1.0
+      "rolls": 1
     }
   ],
   "random_sequence": "minecraft:entities/evoker"

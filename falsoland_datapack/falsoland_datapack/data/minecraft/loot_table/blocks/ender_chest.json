@@ -11,19 +11,8 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
-                        }
-                      ]
-                    }
-                  }
+                  "condition": "minecraft:reference",
+                  "name": "ench_plus:tools/silk_touch"
                 }
               ],
               "name": "minecraft:ender_chest"

@@ -1,4 +1,15 @@
 {
   "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "enderdragon:entity/ender_dragon"
+        }
+      ]
+    }
+  ],
   "random_sequence": "minecraft:entities/ender_dragon"
 }

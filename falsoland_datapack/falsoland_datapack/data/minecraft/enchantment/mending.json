@@ -8,7 +8,34 @@
       {
         "effect": {
           "type": "minecraft:multiply",
-          "factor": 2.0
+          "factor": 2
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:time_check",
+              "value": 1,
+              "period": 220
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:storage",
+                "storage": "lib:enchplus_disable",
+                "path": "mending"
+              },
+              "range": 0
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": -2
         }
       }
     ]

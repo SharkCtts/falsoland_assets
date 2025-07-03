@@ -24,11 +24,29 @@
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2.0,
-                "min": 1.0
+                "max": 2,
+                "min": 1
               },
               "enchantment": "minecraft:looting",
               "function": "minecraft:enchanted_count_increase"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "enchantment": "ench_plus:rule_base/general/golden_thief"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 3
+              },
+              "enchantment": "ench_plus:rule_plus/general/golden_thief"
             }
           ],
           "name": "minecraft:breeze_rod"

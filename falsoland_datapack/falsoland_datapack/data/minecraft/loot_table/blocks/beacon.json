@@ -2,7 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -10,15 +10,22 @@
             {
               "function": "minecraft:copy_components",
               "include": [
-                "minecraft:custom_name"
+                "minecraft:custom_name",
+                "minecraft:block_entity_data"
               ],
-              "source": "block_entity"
+              "source": "block_entity",
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "ench_plus:tools/silk_touch"
+                }
+              ]
             }
           ],
           "name": "minecraft:beacon"
         }
       ],
-      "rolls": 1.0
+      "rolls": 1
     }
   ],
   "random_sequence": "minecraft:blocks/beacon"

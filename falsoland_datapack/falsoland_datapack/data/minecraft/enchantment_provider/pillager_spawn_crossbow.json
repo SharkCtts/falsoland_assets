@@ -1,5 +1,5 @@
 {
   "type": "minecraft:single",
-  "enchantment": "minecraft:piercing",
+  "enchantment": "ench_plus:rule_plus/range/peircing",
   "level": 1
 }

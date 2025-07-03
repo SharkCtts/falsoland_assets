@@ -1,5 +1,5 @@
 {
   "type": "minecraft:single",
-  "enchantment": "minecraft:quick_charge",
+  "enchantment": "ench_plus:rule_plus/range/power",
   "level": 2
 }

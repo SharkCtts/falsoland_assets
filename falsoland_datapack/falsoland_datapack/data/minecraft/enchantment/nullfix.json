@@ -1,0 +1,18 @@
+{
+  "anvil_cost": 1,
+  "description": "Drop de enemigo",
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/global",
+  "weight": 1
+}

@@ -2,70 +2,94 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "minecraft:sea_lantern",
               "conditions": [
                 {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch",
-                          "levels": {
-                            "min": 1
-                          }
-                        }
-                      ]
-                    }
-                  }
+                  "condition": "minecraft:reference",
+                  "name": "ench_plus:tools/silk_touch"
                 }
-              ],
-              "name": "minecraft:sea_lantern"
+              ]
             },
             {
               "type": "minecraft:item",
+              "name": "minecraft:prismarine_crystals",
               "functions": [
                 {
-                  "add": false,
+                  "function": "minecraft:set_count",
                   "count": {
-                    "type": "minecraft:uniform",
-                    "max": 3.0,
-                    "min": 2.0
+                    "min": 2,
+                    "max": 3
                   },
-                  "function": "minecraft:set_count"
+                  "add": false
                 },
                 {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:uniform_bonus_count",
-                  "function": "minecraft:apply_bonus",
-                  "parameters": {
-                    "bonusMultiplier": 1
-                  }
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 4
+                  },
+                  "add": false,
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "ench_plus:rule_base/tool/fortune"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 6
+                  },
+                  "add": false,
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "ench_plus:rule_plus/tool/fortune"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
                 },
                 {
                   "function": "minecraft:limit_count",
                   "limit": {
-                    "max": 5.0,
-                    "min": 1.0
+                    "min": 1,
+                    "max": 5
                   }
-                },
-                {
-                  "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:prismarine_crystals"
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                }
+              ]
             }
           ]
         }
-      ],
-      "rolls": 1.0
+      ]
     }
-  ],
-  "random_sequence": "minecraft:blocks/sea_lantern"
+  ]
 }

@@ -194,7 +194,8 @@
                         "enchantments": {
                           "minecraft:fire_protection": 4.0,
                           "minecraft:projectile_protection": 4.0,
-                          "minecraft:protection": 4.0
+                          "minecraft:protection": 4.0,
+						  "ench_enemy:golden_heart": 1.0
                         },
                         "function": "minecraft:set_enchantments"
                       }
@@ -230,7 +231,8 @@
                         "enchantments": {
                           "minecraft:fire_protection": 4.0,
                           "minecraft:projectile_protection": 4.0,
-                          "minecraft:protection": 4.0
+                          "minecraft:protection": 4.0,
+						  "ench_enemy:watch_me": 1.0
                         },
                         "function": "minecraft:set_enchantments"
                       }

@@ -19,11 +19,29 @@
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
+                "max": 1,
+                "min": 0
               },
               "enchantment": "minecraft:looting",
               "function": "minecraft:enchanted_count_increase"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "ench_plus:rule_base/general/golden_thief"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "enchantment": "ench_plus:rule_plus/general/golden_thief"
             }
           ],
           "name": "minecraft:glowstone_dust"
@@ -43,11 +61,29 @@
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
+                "max": 1,
+                "min": 0
               },
               "enchantment": "minecraft:looting",
               "function": "minecraft:enchanted_count_increase"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "ench_plus:rule_base/general/golden_thief"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "enchantment": "ench_plus:rule_plus/general/golden_thief"
             }
           ],
           "name": "minecraft:sugar"
@@ -67,11 +103,29 @@
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
+                "max": 1,
+                "min": 0
               },
               "enchantment": "minecraft:looting",
               "function": "minecraft:enchanted_count_increase"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "ench_plus:rule_base/general/golden_thief"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "enchantment": "ench_plus:rule_plus/general/golden_thief"
             }
           ],
           "name": "minecraft:spider_eye"
@@ -91,11 +145,29 @@
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
+                "max": 1,
+                "min": 0
               },
               "enchantment": "minecraft:looting",
               "function": "minecraft:enchanted_count_increase"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "ench_plus:rule_base/general/golden_thief"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "enchantment": "ench_plus:rule_plus/general/golden_thief"
             }
           ],
           "name": "minecraft:glass_bottle"
@@ -115,11 +187,29 @@
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
+                "max": 1,
+                "min": 0
               },
               "enchantment": "minecraft:looting",
               "function": "minecraft:enchanted_count_increase"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "ench_plus:rule_base/general/golden_thief"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "enchantment": "ench_plus:rule_plus/general/golden_thief"
             }
           ],
           "name": "minecraft:gunpowder"
@@ -139,11 +229,29 @@
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
+                "max": 1,
+                "min": 0
               },
               "enchantment": "minecraft:looting",
               "function": "minecraft:enchanted_count_increase"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "ench_plus:rule_base/general/golden_thief"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "enchantment": "ench_plus:rule_plus/general/golden_thief"
             }
           ],
           "name": "minecraft:stick",
@@ -174,11 +282,29 @@
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1.0,
-                "min": 0.0
+                "max": 1,
+                "min": 0
               },
               "enchantment": "minecraft:looting",
               "function": "minecraft:enchanted_count_increase"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "enchantment": "ench_plus:rule_base/general/golden_thief"
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "enchantment": "ench_plus:rule_plus/general/golden_thief"
             }
           ],
           "name": "minecraft:redstone"

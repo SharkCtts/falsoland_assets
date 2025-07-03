@@ -11,7 +11,18 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:magenta_terracotta"
+          "name": "minecraft:magenta_terracotta",
+          "functions": [
+            {
+              "function": "minecraft:furnace_smelt",
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "ench_plus:tools/magma_hit"
+                }
+              ]
+            }
+          ]
         }
       ],
       "rolls": 1.0

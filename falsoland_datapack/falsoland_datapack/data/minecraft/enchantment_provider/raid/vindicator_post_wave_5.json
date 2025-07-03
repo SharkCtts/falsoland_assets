@@ -1,5 +1,5 @@
 {
   "type": "minecraft:single",
-  "enchantment": "minecraft:sharpness",
+  "enchantment": "ench_plus:rule_plus/melee/void_attack",
   "level": 2
 }
