@@ -37,17 +37,6 @@
           "type": "minecraft:run_function",
           "function": "enderdragon:wither_knight/limit/run_check"
         }
-      },
-      {
-        "requirements": {
-          "condition": "minecraft:time_check",
-          "value": 1,
-          "period": 20
-        },
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "enderdragon:wither_knight/alive/run_alive"
-        }
       }
     ]
   },
