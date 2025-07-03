@@ -11,18 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:purple_terracotta",
-          "functions": [
-            {
-              "function": "minecraft:furnace_smelt",
-              "conditions": [
-                {
-                  "condition": "minecraft:reference",
-                  "name": "ench_plus:tools/magma_hit"
-                }
-              ]
-            }
-          ]
+          "name": "minecraft:purple_terracotta"
         }
       ],
       "rolls": 1.0

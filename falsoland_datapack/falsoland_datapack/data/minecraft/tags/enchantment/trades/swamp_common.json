@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "ench_plus:armor/cooldown_my_soul",
+    "minecraft:aqua_affinity",
+    "minecraft:swift_sneak"
+  ]
+}

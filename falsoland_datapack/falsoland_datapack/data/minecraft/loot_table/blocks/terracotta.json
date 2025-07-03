@@ -11,18 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:terracotta",
-          "functions": [
-            {
-              "function": "minecraft:furnace_smelt",
-              "conditions": [
-                {
-                  "condition": "minecraft:reference",
-                  "name": "ench_plus:tools/magma_hit"
-                }
-              ]
-            }
-          ]
+          "name": "minecraft:terracotta"
         }
       ],
       "rolls": 1.0
@@ -30,7 +19,3 @@
   ],
   "random_sequence": "minecraft:blocks/terracotta"
 }
-
-
-
-

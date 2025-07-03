@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:frost_walker",
+    "minecraft:impaling",
+    "minecraft:luck_of_the_sea"
+  ]
+}

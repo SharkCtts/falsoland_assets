@@ -8,37 +8,7 @@
       {
         "effect": {
           "type": "minecraft:multiply",
-          "factor": 2
-        }
-      }
-    ],
-    "minecraft:location_changed": [
-      {
-        "requirements": {
-          "condition": "minecraft:all_of",
-          "terms": [
-            {
-              "condition": "minecraft:time_check",
-              "value": {
-                "min": 1,
-                "max": 21
-              },
-              "period": 120
-            },
-            {
-              "condition": "minecraft:value_check",
-              "value": {
-                "type": "minecraft:storage",
-                "storage": "lib:enchplus_disable",
-                "path": "mending"
-              },
-              "range": 1
-            }
-          ]
-        },
-        "effect": {
-          "type": "minecraft:change_item_damage",
-          "amount": -2
+          "factor": 2.0
         }
       }
     ]

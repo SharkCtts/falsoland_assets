@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "values": [
 	"ench_plus:rule_base/melee/fire_aspect",
 	"ench_plus:rule_plus/melee/fire_aspect"
