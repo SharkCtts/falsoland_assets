@@ -101,8 +101,8 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "value": "custom:jukebox_song/tears"
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_tears"
         }
       ],
       "conditions": [

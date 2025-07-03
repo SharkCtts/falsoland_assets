@@ -1,6 +1,6 @@
 {
     "parent": "item/template_music_disc",
     "textures": {
-        "layer0": "item/feature_item/music/hello_sekai/roar_of_the_jungle_dragon"
+        "layer0": "item/feature_item/music/roar_of_the_jungle_dragon"
     }
 }
