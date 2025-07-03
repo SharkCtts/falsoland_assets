@@ -188,6 +188,11 @@
 			{"name":"music_disc/hello_sekai_event", "stream": true, "attenuation_distance": 64}
 		]
 	},
+	"music_disc.lava_chicken": {
+		"sounds": [
+			{"name":"music_disc/lava_chicken", "stream": true, "attenuation_distance": 64}
+		]
+	},
 	"lobby.random_music": {
 		"sounds": [
 			{"name":"music_lobby/0", "stream": true},

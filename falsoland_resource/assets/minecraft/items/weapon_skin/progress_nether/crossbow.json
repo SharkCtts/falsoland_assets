@@ -7,70 +7,70 @@
         "model": "item/weapon_skin/progress_nether/crossbow_base"
       },
       {
-        "type": "minecraft:condition",
-        "property": "minecraft:using_item",
-        "on_true": {
-          "type": "minecraft:range_dispatch",
-          "property": "minecraft:crossbow/pull",
-          "entries": [
-            {
-              "threshold": 0.4,
-              "model": {
-                "type": "minecraft:model",
-                "model": "item/weapon_skin/progress_nether/crossbow_1"
-              }
-            },
-            {
-              "threshold": 1,
-              "model": {
-                "type": "minecraft:model",
-                "model": "item/weapon_skin/progress_nether/crossbow_2"
-              }
+        "type": "minecraft:select",
+        "property": "minecraft:charge_type",
+        "cases": [
+          {
+            "when": "arrow",
+            "model": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "item/weapon_skin/progress_nether/crossbow_pulling_2"
+                },
+                {
+                  "type": "minecraft:model",
+                  "model": "item/weapon_skin/progress_nether/crossbow_with_arrow"
+                }
+              ]
             }
-          ],
-          "fallback": {
-            "type": "minecraft:model",
-            "model": "item/weapon_skin/progress_nether/crossbow_pulling_0"
+          },
+          {
+            "when": "rocket",
+            "model": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "item/weapon_skin/progress_nether/crossbow_pulling_2"
+                },
+                {
+                  "type": "minecraft:model",
+                  "model": "item/weapon_skin/progress_nether/crossbow_with_rocket"
+                }
+              ]
+            }
           }
-        },
-        "on_false": {
-          "type": "minecraft:select",
-          "property": "minecraft:charge_type",
-          "cases": [
-            {
-              "when": "arrow",
-              "model": {
-                "type": "minecraft:composite",
-                "models": [
-                  {
-                    "type": "minecraft:model",
-                    "model": "item/weapon_skin/progress_nether/crossbow_pulling_2"
-                  },
-                  {
-                    "type": "minecraft:model",
-                    "model": "item/weapon_skin/progress_nether/crossbow_with_arrow"
-                  }
-                ]
+        ],
+        "fallback": {
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_true": {
+            "type": "minecraft:range_dispatch",
+            "property": "minecraft:crossbow/pull",
+            "entries": [
+              {
+                "threshold": 0.5,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "item/weapon_skin/progress_nether/crossbow_pulling_1"
+                }
+              },
+              {
+                "threshold": 1,
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "item/weapon_skin/progress_nether/crossbow_pulling_2"
+                }
               }
-            },
-            {
-              "when": "rocket",
-              "model": {
-                "type": "minecraft:composite",
-                "models": [
-                  {
-                    "type": "minecraft:model",
-                    "model": "item/weapon_skin/progress_nether/crossbow_pulling_2"
-                  },
-                  {
-                    "type": "minecraft:model",
-                    "model": "item/weapon_skin/progress_nether/crossbow_with_rocket"
-                  }
-                ]
-              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "item/weapon_skin/progress_nether/crossbow_pulling_0"
             }
-          ],
-          "fallback": {
+          },
+          "on_false": {
             "type": "minecraft:model",
             "model": "item/weapon_skin/progress_nether/crossbow_standby"
           }
