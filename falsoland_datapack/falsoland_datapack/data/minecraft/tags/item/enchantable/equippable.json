@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "values": [
     "#minecraft:foot_armor",
     "#minecraft:leg_armor",

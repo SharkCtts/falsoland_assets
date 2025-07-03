@@ -11,18 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:cactus",
-          "functions": [
-            {
-              "function": "minecraft:furnace_smelt",
-              "conditions": [
-                {
-                  "condition": "minecraft:reference",
-                  "name": "ench_plus:tools/magma_hit"
-                }
-              ]
-            }
-          ]
+          "name": "minecraft:cactus"
         }
       ],
       "rolls": 1.0

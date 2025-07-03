@@ -10,8 +10,8 @@
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 2,
-            "per_level_above_first": 2
+            "base": 2.0,
+            "per_level_above_first": 2.0
           }
         }
       }
@@ -22,8 +22,8 @@
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 10,
-            "per_level_above_first": 10
+            "base": 10.0,
+            "per_level_above_first": 10.0
           }
         }
       }
@@ -42,6 +42,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/debug_disabled",
+  "supported_items": "#minecraft:enchantable/crossbow",
   "weight": 2
 }
