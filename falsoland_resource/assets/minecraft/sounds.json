@@ -200,5 +200,10 @@
 			{"name":"music_lobby/halland", "stream": true},
 			{"name":"music_lobby/waterlust", "stream": true}
 		]
+	},
+	"music_disc.roar_of_the_jungle_dragon": {
+		"sounds": [
+			{"name":"music_disc/roar_of_the_jungle_dragon", "stream": true, "attenuation_distance": 64}
+		]
 	}
 }
