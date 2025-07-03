@@ -61,6 +61,15 @@
           "value": "minecraft:chests/end_city_treasure"
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "custom:jukebox_song/roar_of_the_jungle_dragon"
+        }
+      ]
     }
   ]
 }
