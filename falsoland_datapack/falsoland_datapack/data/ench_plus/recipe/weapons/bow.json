@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "X": "minecraft:string"
+  },
+  "pattern": [
+    " #X",
+    "# X",
+    " #X"
+  ],
+  "result": {
+    "components": {
+      "minecraft:max_damage": 143,
+      "minecraft:custom_data": "{ench_plus_data: {default_skin_id: 0, default_durability: 143}}",
+      "minecraft:custom_model_data": {"floats": [0]}
+    },
+    "count": 1,
+    "id": "minecraft:bow"
+  }
+}

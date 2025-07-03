@@ -1,4 +1,4 @@
-execute if predicate lib_rng:high run return run execute store result score @s lib.rng run random value 1..30
-execute if predicate lib_rng:mid run return run execute store result score @s lib.rng run random value 1..60
-execute if predicate lib_rng:small run return run execute store result score @s lib.rng run random value 1..80
-execute store result score @s lib.rng run random value 1..100
+execute if predicate lib_rng:high store result score @s lib.rng run return run random value 0..15
+execute if predicate lib_rng:mid store result score @s lib.rng run return run random value 0..35
+execute if predicate lib_rng:small store result score @s lib.rng run return run random value 0..55
+execute store result score @s lib.rng run random value 0..99

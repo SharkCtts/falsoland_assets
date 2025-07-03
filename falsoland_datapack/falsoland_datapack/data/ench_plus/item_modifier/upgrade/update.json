@@ -1,0 +1,138 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "ench_plus:upgrade/type/wooden",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": "#ench_plus:type_wooden"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "ench_plus:upgrade/type/stone",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": "#ench_plus:type_stone"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "ench_plus:upgrade/type/iron",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": "#ench_plus:type_iron"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "ench_plus:upgrade/type/golden",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": "#ench_plus:type_golden"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "ench_plus:upgrade/type/diamond",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": "#ench_plus:type_diamond"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "ench_plus:upgrade/type/netherite",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": "#ench_plus:type_netherite"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "ench_plus:upgrade/type/bow",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": "minecraft:bow"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "ench_plus:upgrade/type/crossbow",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": "minecraft:crossbow"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

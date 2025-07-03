@@ -1,0 +1,31 @@
+{
+  "anvil_cost": 4,
+  "description": "enderdragon - stray_corrupted",
+  "effects": {
+    "minecraft:prevent_equipment_drop": {},
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enderdragon:stray_currupted/active/run_active"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 25
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 25
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "minecraft:debug_stick",
+  "weight": 2
+}

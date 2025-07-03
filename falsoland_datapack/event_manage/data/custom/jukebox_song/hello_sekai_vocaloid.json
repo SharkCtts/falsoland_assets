@@ -1,0 +1,10 @@
+{
+    "comparator_output": 15,
+    "description": {
+        "text": "Hello Sekai - 初音ミク × 鏡音リン × 鏡音レン × 巡音ルカ × MEIKO × KAITO"
+    },
+    "length_in_seconds": 314.0,
+    "sound_event": {
+		"sound_id": "minecraft:music_disc.hello_sekai_vocaloid"
+	}
+}

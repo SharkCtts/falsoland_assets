@@ -1,4 +1,4 @@
-$execute in $(SpawnDimension) positioned $(SpawnX) $(SpawnY) $(SpawnZ) if loaded ~ ~ ~ if block ~ ~ ~ #minecraft:beds run return run spreadplayers ~ ~ 1 2 under $(SpawnY) false @s
-$execute in $(SpawnDimension) positioned $(SpawnX) $(SpawnY) $(SpawnZ) if loaded ~ ~ ~ if block ~ ~ ~ minecraft:respawn_anchor run return run spreadplayers ~ ~ 1 2 under $(SpawnY) false @s
-$execute in $(SpawnDimension) positioned $(SpawnX) $(SpawnY) $(SpawnZ) unless loaded ~ ~ ~ run return run spreadplayers ~ ~ 1 2 under $(SpawnY) false @s
-tellraw @s ["",{"text":"No puedes regresar ahí... Ya no..."}]
+execute if predicate {"condition":"minecraft:time_check","value":0,"period":4} run return run teleport @s ~0.5 ~1 ~
+execute if predicate {"condition":"minecraft:time_check","value":1,"period":4} run return run teleport @s ~-0.5 ~1 ~
+execute if predicate {"condition":"minecraft:time_check","value":2,"period":4} run return run teleport @s ~ ~1 ~0.5
+teleport @s ~ ~1 ~-0.5

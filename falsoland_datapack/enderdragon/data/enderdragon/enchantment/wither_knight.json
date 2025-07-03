@@ -1,0 +1,68 @@
+{
+  "anvil_cost": 4,
+  "description": "enderdragon - wither_knight",
+  "effects": {
+    "minecraft:prevent_equipment_drop": {},
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enderdragon:wither_knight/charge/run_charge"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:time_check",
+          "value": 1,
+          "period": 30
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enderdragon:wither_knight/aggro/run_aggro"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 1200
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enderdragon:wither_knight/limit/run_check"
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:time_check",
+          "value": 1,
+          "period": 20
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enderdragon:wither_knight/alive/run_alive"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 25
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 25
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "minecraft:debug_stick",
+  "weight": 2
+}

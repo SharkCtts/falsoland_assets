@@ -6,8 +6,8 @@
         "container.*": {
           "items": "minecraft:music_disc_11",
           "count": {
-            "min": 39,
-            "max": 68
+            "min": 34,
+            "max": 66
           },
           "predicates": {
             "minecraft:custom_data": "{lucky_soul:1b}"

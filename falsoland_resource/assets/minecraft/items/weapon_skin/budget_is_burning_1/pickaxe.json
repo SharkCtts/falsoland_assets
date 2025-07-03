@@ -1,0 +1,96 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "entries": [
+      {
+        "threshold": 10,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/weapon_skin/budget_is_burning_1/pickaxe",
+          "tints": [
+            {
+              "type": "minecraft:constant",
+              "value": 9463596
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 20,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/weapon_skin/budget_is_burning_1/pickaxe",
+          "tints": [
+            {
+              "type": "minecraft:constant",
+              "value": 10328469
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 30,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/weapon_skin/budget_is_burning_1/pickaxe",
+          "tints": [
+            {
+              "type": "minecraft:constant",
+              "value": 16448250
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 40,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/weapon_skin/budget_is_burning_1/pickaxe",
+          "tints": [
+            {
+              "type": "minecraft:constant",
+              "value": 16762880
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 50,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/weapon_skin/budget_is_burning_1/pickaxe",
+          "tints": [
+            {
+              "type": "minecraft:constant",
+              "value": 65518
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 60,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/weapon_skin/budget_is_burning_1/pickaxe",
+          "tints": [
+            {
+              "type": "minecraft:constant",
+              "value": 3354926
+            }
+          ]
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/weapon_skin/budget_is_burning_1/pickaxe",
+      "tints": [
+        {
+          "type": "minecraft:constant",
+          "value": 9699328
+        }
+      ]
+    }
+  }
+}

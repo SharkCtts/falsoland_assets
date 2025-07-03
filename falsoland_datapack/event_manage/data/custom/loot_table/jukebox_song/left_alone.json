@@ -6,14 +6,17 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:music_disc_5",
+          "name": "minecraft:music_disc_11",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "minecraft:server_discs/left_alone",
-                "minecraft:jukebox_playable": {
-                  "song": "custom:left_alone"
+                "minecraft:item_model": "minecraft:feature_item/music/left_alone",
+                "minecraft:jukebox_playable": "custom:left_alone",
+                "minecraft:custom_model_data": {
+                  "floats": [
+                    1000
+                  ]
                 }
               }
             }

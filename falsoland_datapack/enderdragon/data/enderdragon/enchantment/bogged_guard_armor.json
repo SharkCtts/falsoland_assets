@@ -1,0 +1,53 @@
+{
+  "anvil_cost": 4,
+  "description": "enderdragon - bogged_guard_armor",
+  "effects": {
+    "minecraft:prevent_equipment_drop": {},
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Health:0.0f}"
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enderdragon:bogged_guard/portal/run_portal"
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Health:0.0f}"
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enderdragon:bogged_guard/portal/run_portal"
+        },
+        "enchanted": "victim",
+        "affected": "victim"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 25
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 25
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "minecraft:debug_stick",
+  "weight": 2
+}

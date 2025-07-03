@@ -1,54 +1,108 @@
 {
-    "model": {
-        "type": "range_dispatch",
-        "property": "custom_model_data",
-        "fallback": {
-            "type": "model",
-            "model": "item/iron_sword"
-        },
-        "entries": [
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/iron_sword"
+    },
+    "entries": [
+      {
+        "threshold": 1,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
             {
-                "threshold": 1,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/iron_sword/leather_iron_sword"
-                }
+              "type": "minecraft:model",
+              "model": "item/iron_sword"
             },
             {
-                "threshold": 2,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/iron_sword/copper_iron_sword"
-                }
-            },
-            {
-                "threshold": 3,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/iron_sword/breeze_iron_sword"
-                }
-            },
-            {
-                "threshold": 4,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/iron_sword/gold_iron_sword"
-                }
-            },
-            {
-                "threshold": 5,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/iron_sword/blaze_iron_sword"
-                }
-            },
-            {
-                "threshold": 6,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/iron_sword/netherite_iron_sword"
-                }
+              "type": "minecraft:model",
+              "model": "item/weapon_held/leather_sword"
             }
-        ]
-    }
+          ]
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/iron_sword"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/copper_sword"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 3,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/iron_sword"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/breeze_sword"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 4,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/iron_sword"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/gold_sword"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 5,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/iron_sword"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/blaze_sword"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 6,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/iron_sword"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/netherite_sword"
+            }
+          ]
+        }
+      }
+    ]
+  }
 }

@@ -173,6 +173,21 @@
 			{"name":"music_disc/theme_of_the_lantern_festival_lofi", "stream": true, "attenuation_distance": 64}
 		]
 	},
+	"music_disc.tears": {
+		"sounds": [
+			{"name":"music_disc/tears", "stream": true, "attenuation_distance": 64}
+		]
+	},
+	"music_disc.hello_sekai": {
+		"sounds": [
+			{"name":"music_disc/hello_sekai", "stream": true, "attenuation_distance": 64}
+		]
+	},
+	"music_disc.hello_sekai_vocaloid": {
+		"sounds": [
+			{"name":"music_disc/hello_sekai_event", "stream": true, "attenuation_distance": 64}
+		]
+	},
 	"lobby.random_music": {
 		"sounds": [
 			{"name":"music_lobby/0", "stream": true},

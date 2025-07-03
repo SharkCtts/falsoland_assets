@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "raid_is_clear": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:hero_of_the_village": {
+            "amplifier": 0,
+            "duration": 48000
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "raider:hero_clear",
+    "loot": [
+      "raider:hero_0"
+    ]
+  }
+}

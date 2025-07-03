@@ -60,7 +60,6 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "item": "",
               "count": 32,
               "add": false
             }

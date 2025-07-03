@@ -1,24 +1,18 @@
 {
-  "parent": "progress:fase_2/get_wither_skull",
+  "parent": "progress:fase_2/summon_wither_with_omen",
   "criteria": {
     "summoned": {
+      "trigger": "minecraft:player_killed_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "type": "minecraft:wither"
-            }
-          }
-        ]
-      },
-      "trigger": "minecraft:summoned_entity"
+        "entity": {
+          "type": "minecraft:wither"
+        }
+      }
     }
   },
   "display": {
     "description": {
-      "translate": "advancements.nether.summon_wither.description"
+      "text": "Ahora destruye tu creación..."
     },
     "icon": {
       "count": 1,

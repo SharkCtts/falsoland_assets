@@ -13,7 +13,7 @@
   },
   "display": {
     "announce_to_chat": true,
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "background": "minecraft:gui/advancements/backgrounds/stone",
     "description": {
       "text": "Consigue una mesa de crafteo y empieza una nueva aventura..."
     },

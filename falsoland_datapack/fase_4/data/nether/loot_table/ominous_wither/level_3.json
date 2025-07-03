@@ -1,0 +1,513 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_scrap",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beacon",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_entity_data": {
+                  "id": "minecraft:beacon",
+                  "primary_effect": "minecraft:regeneration",
+                  "secondary_effect": "minecraft:regeneration"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "[+] Efecto: ",
+                    "extra": [
+                      {
+                        "translate": "effect.minecraft.regeneration"
+                      }
+                    ],
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beacon",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_entity_data": {
+                  "id": "minecraft:beacon",
+                  "primary_effect": "minecraft:night_vision",
+                  "secondary_effect": "minecraft:night_vision"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "[+] Efecto: ",
+                    "extra": [
+                      {
+                        "translate": "effect.minecraft.night_vision"
+                      }
+                    ],
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beacon",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_entity_data": {
+                  "id": "minecraft:beacon",
+                  "primary_effect": "minecraft:glowing",
+                  "secondary_effect": "minecraft:glowing"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "[+] Efecto: ",
+                    "extra": [
+                      {
+                        "translate": "effect.minecraft.glowing"
+                      }
+                    ],
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beacon",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_entity_data": {
+                  "id": "minecraft:beacon",
+                  "primary_effect": "minecraft:slow_falling",
+                  "secondary_effect": "minecraft:slow_falling"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "[+] Efecto: ",
+                    "extra": [
+                      {
+                        "translate": "effect.minecraft.slow_falling"
+                      }
+                    ],
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beacon",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_entity_data": {
+                  "id": "minecraft:beacon",
+                  "primary_effect": "minecraft:saturation",
+                  "secondary_effect": "minecraft:saturation"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "[+] Efecto: ",
+                    "extra": [
+                      {
+                        "translate": "effect.minecraft.saturation"
+                      }
+                    ],
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beacon",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_entity_data": {
+                  "id": "minecraft:beacon",
+                  "primary_effect": "minecraft:dolphins_grace",
+                  "secondary_effect": "minecraft:dolphins_grace"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "[+] Efecto: ",
+                    "extra": [
+                      {
+                        "translate": "effect.minecraft.dolphins_grace"
+                      }
+                    ],
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beacon",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_entity_data": {
+                  "id": "minecraft:beacon",
+                  "primary_effect": "minecraft:health_boost",
+                  "secondary_effect": "minecraft:health_boost"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "[+] Efecto: ",
+                    "extra": [
+                      {
+                        "translate": "effect.minecraft.health_boost"
+                      }
+                    ],
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "ench_plus:handle/update": 1,
+                "ench_plus:handle/held_netherite": 1
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "ench_plus:handle/update": 1,
+                "ench_plus:handle/held_netherite": 1
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "ench_plus:handle/update": 1,
+                "ench_plus:handle/held_netherite": 1
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "ench_plus:handle/update": 1,
+                "ench_plus:handle/held_netherite": 1
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "ench_plus:handle/update": 1,
+                "ench_plus:handle/held_netherite": 1
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "ench_plus:handle/update": 1,
+                "ench_plus:handle/held_netherite": 1
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#ench_plus:now_amplified",
+              "only_compatible": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

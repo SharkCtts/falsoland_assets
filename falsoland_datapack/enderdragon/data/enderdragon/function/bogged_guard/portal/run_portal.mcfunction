@@ -1,0 +1,7 @@
+execute if entity @n[tag=dragon_portalvex,type=vex,distance=..4] run return fail
+
+playsound minecraft:block.end_portal_frame.fill block @a[distance=..120] ~ ~ ~ 4 0.8
+playsound minecraft:block.respawn_anchor.set_spawn block @a[distance=..120] ~ ~ ~ 4 0.8
+
+execute align xyz run summon vex ~0.5 ~-0.25 ~0.5 {Silent:1b,PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,Tags:["dragon_portalvex"],Invulnerable:1b,equipment:{head:{id:"stone",components:{"minecraft:enchantments":{"enderdragon:vex_rift": 1}}}},data:{time:[{1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}, {1:1}]},active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:false}],Passengers:[{id:"minecraft:ender_pearl",NoGravity:1b},{id:"minecraft:item_display",item:{id:"minecraft:burn_pottery_sherd",count:1,components:{"minecraft:item_model":"minecraft:feature_item/render/entity_portal",custom_model_data:{colors:[16451769,16124091,15861694,15534016,15271875,14944197,14616263,14354122,14026444,13698767,13436369,13108692,12846550,12518616,12190939,11928797,11601120,11273186,11011044,10683367,10420969,10093292,9765614,9503473,9175539,8847861,8585720,8258042,7995645,7667967]}}}}]}
+execute as @n[type=minecraft:marker,tag=enderdragon_lodestone] at @s run function enderdragon:bogged_guard/portal/poi_marker with entity @s data

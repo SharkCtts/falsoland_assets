@@ -1,36 +1,28 @@
 {
   "criteria": {
-    "clock": {
-      "trigger": "minecraft:location",
-      "conditions": {}
+    "mob_attacked": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "min": 2
+          }
+        }
+      }
     },
-    "hurt": {
+    "mob_hurt": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
           "blocked": false
         }
       }
-    },
-    "kill": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {}
-    },
-    "item": {
-      "trigger": "minecraft:item_durability_changed",
-      "conditions": {
-        "item": {}
-      }
     }
   },
   "requirements": [
     [
-      "clock"
-    ],
-    [
-      "hurt",
-      "item",
-      "kill"
+      "mob_attacked",
+      "mob_hurt"
     ]
   ],
   "rewards": {

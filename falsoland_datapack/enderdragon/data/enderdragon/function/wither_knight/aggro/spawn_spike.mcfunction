@@ -1,0 +1,2 @@
+execute positioned over world_surface run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:pointed_dripstone",Properties:{thickness:"tip",vertical_direction:"up"}},NoGravity:1b,Time:500,DropItem:0b,CancelDrop:1b,HurtEntities:1b}
+execute positioned over world_surface run particle minecraft:wax_on ~ ~1 ~ 0.1 0.4 0.1 0.2 3

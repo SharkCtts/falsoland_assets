@@ -1,0 +1,76 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "entries": [
+      {
+        "threshold": 3,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/feature_menu/menu_as_npc/material/stone_3"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/feature_menu/menu_as_npc/frame/hollow_front_row_3"
+            }
+          ]
+        }
+      },
+	  {
+        "threshold": 4,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/feature_menu/menu_as_npc/material/stone_4"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/feature_menu/menu_as_npc/frame/hollow_front_row_4"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 5,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/feature_menu/menu_as_npc/material/stone_5"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/feature_menu/menu_as_npc/frame/hollow_front_row_5"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 6,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/feature_menu/menu_as_npc/material/stone_6"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/feature_menu/menu_as_npc/frame/hollow_front_row_6"
+            }
+          ]
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:empty"
+    }
+  }
+}

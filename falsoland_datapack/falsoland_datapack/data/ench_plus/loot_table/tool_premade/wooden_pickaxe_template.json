@@ -1,0 +1,95 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:wooden_pickaxe",
+              "functions": [
+                {
+                  "function": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "ench_plus:handle/update": 1
+                  },
+                  "add": false
+                },
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "options": "#ench_plus:not_amplified",
+                  "only_compatible": true
+                },
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "options": "#ench_plus:not_amplified",
+                  "only_compatible": true
+                },
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "options": "#ench_plus:not_amplified",
+                  "only_compatible": true
+                },
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "options": "#ench_plus:not_amplified",
+                  "only_compatible": true
+                },
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "options": "#ench_plus:helds",
+                  "only_compatible": true
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:wooden_pickaxe",
+              "functions":  [
+                {
+                  "function": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "ench_plus:handle/update": 1,
+                    "ench_plus:handle/held_netherite": 1
+                  },
+                  "add": false
+                },
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "options": "#ench_plus:now_amplified",
+                  "only_compatible": true
+                },
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "options": "#ench_plus:now_amplified",
+                  "only_compatible": true
+                },
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "options": "#ench_plus:now_amplified",
+                  "only_compatible": true
+                },
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "options": "#ench_plus:now_amplified",
+                  "only_compatible": true
+                }
+              ]
+            }
+          ],
+          "functions": [],
+          "conditions": []
+        }
+      ]
+    }
+  ]
+}

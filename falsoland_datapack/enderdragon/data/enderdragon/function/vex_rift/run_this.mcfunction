@@ -1,0 +1,2 @@
+function enderdragon:vex_rift/rift_pos
+function enderdragon:vex_rift/rift_durability

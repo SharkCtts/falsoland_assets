@@ -1,0 +1,80 @@
+{
+  "anvil_cost": 4,
+  "description": "enderdragon - skeleton_corrupted_tool",
+  "effects": {
+    "minecraft:prevent_equipment_drop": {},
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enderdragon:skeleton_corrupted/active/run_active"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "effects": {
+              "minecraft:invisibility": {}
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enderdragon:skeleton_corrupted/passive/go_visible/save_gear"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "effects": {
+              "minecraft:invisibility": {}
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:attribute",
+              "attribute": "minecraft:armor",
+              "id": "enderdragon:armor",
+              "amount": 20,
+              "operation": "add_value"
+            },
+            {
+              "type": "minecraft:attribute",
+              "attribute": "minecraft:armor_toughness",
+              "id": "enderdragon:armor_toughness",
+              "amount": 8,
+              "operation": "add_value"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 25
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 25
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "minecraft:debug_stick",
+  "weight": 2
+}

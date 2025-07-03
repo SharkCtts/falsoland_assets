@@ -1,54 +1,108 @@
 {
-    "model": {
-        "type": "range_dispatch",
-        "property": "custom_model_data",
-        "fallback": {
-            "type": "model",
-            "model": "item/netherite_shovel"
-        },
-        "entries": [
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/netherite_shovel"
+    },
+    "entries": [
+      {
+        "threshold": 1,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
             {
-                "threshold": 1,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/netherite_shovel/leather_netherite_shovel"
-                }
+              "type": "minecraft:model",
+              "model": "item/netherite_shovel"
             },
             {
-                "threshold": 2,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/netherite_shovel/copper_netherite_shovel"
-                }
-            },
-            {
-                "threshold": 3,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/netherite_shovel/breeze_netherite_shovel"
-                }
-            },
-            {
-                "threshold": 4,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/netherite_shovel/gold_netherite_shovel"
-                }
-            },
-            {
-                "threshold": 5,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/netherite_shovel/blaze_netherite_shovel"
-                }
-            },
-            {
-                "threshold": 6,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/netherite_shovel/netherite_netherite_shovel"
-                }
+              "type": "minecraft:model",
+              "model": "item/weapon_held/leather_shovel"
             }
-        ]
-    }
+          ]
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/netherite_shovel"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/copper_shovel"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 3,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/netherite_shovel"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/breeze_shovel"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 4,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/netherite_shovel"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/gold_shovel"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 5,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/netherite_shovel"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/blaze_shovel"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 6,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/netherite_shovel"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/netherite_shovel"
+            }
+          ]
+        }
+      }
+    ]
+  }
 }

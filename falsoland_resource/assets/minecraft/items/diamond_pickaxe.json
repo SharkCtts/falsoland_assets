@@ -1,54 +1,108 @@
 {
-    "model": {
-        "type": "range_dispatch",
-        "property": "custom_model_data",
-        "fallback": {
-            "type": "model",
-            "model": "item/diamond_pickaxe"
-        },
-        "entries": [
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/diamond_pickaxe"
+    },
+    "entries": [
+      {
+        "threshold": 1,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
             {
-                "threshold": 1,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/diamond_pickaxe/leather_diamond_pickaxe"
-                }
+              "type": "minecraft:model",
+              "model": "item/diamond_pickaxe"
             },
             {
-                "threshold": 2,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/diamond_pickaxe/copper_diamond_pickaxe"
-                }
-            },
-            {
-                "threshold": 3,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/diamond_pickaxe/breeze_diamond_pickaxe"
-                }
-            },
-            {
-                "threshold": 4,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/diamond_pickaxe/gold_diamond_pickaxe"
-                }
-            },
-            {
-                "threshold": 5,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/diamond_pickaxe/blaze_diamond_pickaxe"
-                }
-            },
-            {
-                "threshold": 6,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/diamond_pickaxe/netherite_diamond_pickaxe"
-                }
+              "type": "minecraft:model",
+              "model": "item/weapon_held/leather_pickaxe"
             }
-        ]
-    }
+          ]
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/diamond_pickaxe"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/copper_pickaxe"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 3,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/diamond_pickaxe"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/breeze_pickaxe"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 4,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/diamond_pickaxe"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/gold_pickaxe"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 5,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/diamond_pickaxe"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/blaze_pickaxe"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 6,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/diamond_pickaxe"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/netherite_pickaxe"
+            }
+          ]
+        }
+      }
+    ]
+  }
 }

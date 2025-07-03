@@ -6,7 +6,7 @@
         "container.*": {
           "items": "minecraft:music_disc_11",
           "count": {
-            "min": 69,
+            "min": 67,
             "max": 99
           },
           "predicates": {

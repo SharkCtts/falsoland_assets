@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "components": {
+              "minecraft:item_model": "minecraft:server_discs/the_deserving"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "fix_music:the_deserving"
+  }
+}

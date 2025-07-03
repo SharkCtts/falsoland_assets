@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "ForceToRespawnPoint": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ForceToRespawnPoint\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "lib_extra:spawn/execute"
+  }
+}

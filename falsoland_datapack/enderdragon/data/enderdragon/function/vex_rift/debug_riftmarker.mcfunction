@@ -1,0 +1,1 @@
+execute align xyz positioned ~0.5 ~0.5 ~0.5 in minecraft:the_end summon minecraft:marker run function enderdragon:vex_rift/riftmaker/edit

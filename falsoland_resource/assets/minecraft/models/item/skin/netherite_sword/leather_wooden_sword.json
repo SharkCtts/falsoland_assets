@@ -1,6 +1,0 @@
-{
-    "parent":"item/handheld",
-    "textures": {
-        "layer0": "item/enchplus_items/sword/leather_wooden_sword"
-    }
-}

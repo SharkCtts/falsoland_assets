@@ -1,3 +1,3 @@
 $execute at $(entity_tree) if entity @s[distance=..6] run damage $(entity_tree) 5 ench_plus:chain_reaction by @s from $(entity_root)
-$execute at $(entity_tree) if entity @s[distance=..6] as $(entity_tree) anchored eyes run summon minecraft:area_effect_cloud ^ ^ ^0.1 {CustomNameVisible:1b,Duration:18,CustomName:'{"font":"ench_status","italic":false,"text":"\\uE008","color":"#$(entity_rbgs)","bold":true}'}
+$execute at $(entity_tree) if entity @s[distance=..6] as $(entity_tree) anchored eyes run summon minecraft:area_effect_cloud ^ ^ ^0.1 {CustomNameVisible:1b,Duration:18,Radius:0f,CustomName:{"font":"ench_status","italic":false,"text":"\uE008","color":"#$(entity_rbgs)","bold":true}}
 $execute as @e[sort=random,distance=..6,limit=4,type=!minecraft:player,predicate=ench_plus:status/enchant_target] at @s run function ench_plus:status/chainreaction/macro_03 {"entity_root":"$(entity_root)","entity_tree":"$(entity_tree)","entity_rbgs":"$(entity_rbgs)"}

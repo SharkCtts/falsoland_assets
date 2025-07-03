@@ -1,6 +1,0 @@
-{
-    "parent": "item/crossbow",
-    "textures": {
-        "layer0": "item/enchplus_items/crossbow/blaze_crossbow_pulling_2"
-    }
-}

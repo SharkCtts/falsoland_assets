@@ -27,6 +27,33 @@
         "amount": 40,
         "operation": "add_value"
       }
+    ],
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "items": [
+                  "minecraft:netherite_pickaxe",
+                  "minecraft:netherite_shovel",
+                  "minecraft:netherite_hoe",
+                  "minecraft:netherite_axe"
+                ]
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:mining_efficiency",
+          "id": "minecraft:enchantment.efficiency_netherite",
+          "amount": 16,
+          "operation": "add_value"
+        }
+      }
     ]
   }
 }

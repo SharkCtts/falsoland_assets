@@ -1,0 +1,1 @@
+$execute positioned over world_surface run summon area_effect_cloud ~ ~ ~ {Radius:1f,Duration:400,potion_contents:{custom_color:$(custom_color)}}

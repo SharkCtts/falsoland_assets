@@ -1,6 +1,0 @@
-{
-    "parent":"item/handheld",
-    "textures": {
-        "layer0": "item/enchplus_items/axe/netherite_stone_axe"
-    }
-}

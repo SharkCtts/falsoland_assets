@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "$": "minecraft:tripwire_hook",
+    "&": "minecraft:iron_ingot",
+    "~": "minecraft:string"
+  },
+  "pattern": [
+    "#&#",
+    "~$~",
+    " # "
+  ],
+  "result": {
+    "components": {
+      "minecraft:max_damage": 234,
+      "minecraft:custom_data": "{ench_plus_data: {default_skin_id: 0, default_durability: 234}}",
+      "minecraft:custom_model_data": {"floats": [0]}
+    },
+    "count": 1,
+    "id": "minecraft:crossbow"
+  }
+}

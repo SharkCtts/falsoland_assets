@@ -1,7 +1,7 @@
 {
   "description": {
     "translate": "ench_plus.village_pillage.name",
-    "color": "aqua",
+    "color": "yellow",
     "bold": false
   },
   "supported_items": "#ench_plus:global",
@@ -25,7 +25,7 @@
       {
         "effect": {
           "type": "minecraft:multiply",
-          "factor": 2.5
+          "factor": 3
         },
         "requirements": {
           "condition": "minecraft:all_of",

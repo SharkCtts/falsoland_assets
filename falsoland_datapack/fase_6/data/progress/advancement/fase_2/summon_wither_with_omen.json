@@ -1,0 +1,34 @@
+{
+  "parent": "progress:fase_2/get_wither_skull",
+  "criteria": {
+    "wither": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:wither"
+        }
+      }
+    }
+  },
+  "display": {
+    "frame": "task",
+    "announce_to_chat": true,
+    "description": {
+      "text": "Mientras tengas el efecto de mal presagio, crea un Wither."
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:skull_banner_pattern"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "SBMM"
+    }
+  },
+  "requirements": [
+    [
+      "wither"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,27 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "item/feature_menu/menu_as_npc/frame/hollow_front_row_3",
+		"particle": "item/feature_menu/menu_as_npc/frame/hollow_front_row_3"
+	},
+	"elements": [
+		{
+			"from": [-16, -16, 15.9375],
+			"to": [32, 32, 16],
+			"faces": {
+				"north": {"uv": [11, 16, 0, 5], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [0, 5, 11, 16], "texture": "#0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"firstperson_lefthand": {
+			"scale": [0, 0, 0]
+		},
+		"gui": {
+			"translation": [-72, 65, -80],
+			"scale": [3.66, 3.66, 3.66]
+		}
+	}
+}

@@ -1,54 +1,108 @@
 {
-    "model": {
-        "type": "range_dispatch",
-        "property": "custom_model_data",
-        "fallback": {
-            "type": "model",
-            "model": "item/diamond_hoe"
-        },
-        "entries": [
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/diamond_hoe"
+    },
+    "entries": [
+      {
+        "threshold": 1,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
             {
-                "threshold": 1,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/diamond_hoe/leather_diamond_hoe"
-                }
+              "type": "minecraft:model",
+              "model": "item/diamond_hoe"
             },
             {
-                "threshold": 2,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/diamond_hoe/copper_diamond_hoe"
-                }
-            },
-            {
-                "threshold": 3,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/diamond_hoe/breeze_diamond_hoe"
-                }
-            },
-            {
-                "threshold": 4,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/diamond_hoe/gold_diamond_hoe"
-                }
-            },
-            {
-                "threshold": 5,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/diamond_hoe/blaze_diamond_hoe"
-                }
-            },
-            {
-                "threshold": 6,
-                "model": {
-                    "type": "model",
-                    "model": "item/skin/diamond_hoe/netherite_diamond_hoe"
-                }
+              "type": "minecraft:model",
+              "model": "item/weapon_held/leather_hoe"
             }
-        ]
-    }
+          ]
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/diamond_hoe"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/copper_hoe"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 3,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/diamond_hoe"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/breeze_hoe"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 4,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/diamond_hoe"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/gold_hoe"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 5,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/diamond_hoe"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/blaze_hoe"
+            }
+          ]
+        }
+      },
+      {
+        "threshold": 6,
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "item/diamond_hoe"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "item/weapon_held/netherite_hoe"
+            }
+          ]
+        }
+      }
+    ]
+  }
 }

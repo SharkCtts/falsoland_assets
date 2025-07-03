@@ -1,6 +1,0 @@
-{
-    "parent": "item/bow",
-    "textures": {
-        "layer0": "item/enchplus_items/bow/gold_bow_pulling_1"
-    }
-}

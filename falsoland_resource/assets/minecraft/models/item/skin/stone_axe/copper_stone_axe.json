@@ -1,6 +1,0 @@
-{
-    "parent":"item/handheld",
-    "textures": {
-        "layer0": "item/enchplus_items/axe/copper_stone_axe"
-    }
-}

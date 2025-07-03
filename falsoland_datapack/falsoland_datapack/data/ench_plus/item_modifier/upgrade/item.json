@@ -1,34 +1,196 @@
 [
-    {
-      "function": "minecraft:set_components","components": {"minecraft:max_damage": 508},
-      "conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"mainhand": {"predicates": {"minecraft:enchantments": [{"enchantments": "ench_plus:handle/held_none"}]}}}}}]
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 1017
     },
-    {
-      "function": "minecraft:set_components","components": {"minecraft:max_damage": 1016},
-      "conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"mainhand": {"predicates": {"minecraft:enchantments": [{"enchantments": "ench_plus:handle/held_leather"}]}}}}}]
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "ench_plus:handle/held_none"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 2034
     },
-    {
-      "function": "minecraft:set_components","components": {"minecraft:max_damage": 1524},
-      "conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"mainhand": {"predicates": {"minecraft:enchantments": [{"enchantments": "ench_plus:handle/held_copper"}]}}}}}]
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "ench_plus:handle/held_leather"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 2034
     },
-    {
-      "function": "minecraft:set_components","components": {"minecraft:max_damage": 2032},
-      "conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"mainhand": {"predicates": {"minecraft:enchantments": [{"enchantments": "ench_plus:handle/held_breeze"}]}}}}}]
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "ench_plus:handle/held_copper"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 3051
     },
-    {
-      "function": "minecraft:set_components","components": {"minecraft:max_damage": 2540},
-      "conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"mainhand": {"predicates": {"minecraft:enchantments": [{"enchantments": "ench_plus:handle/held_gold"}]}}}}}]
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "ench_plus:handle/held_breeze"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 3051
     },
-    {
-      "function": "minecraft:set_components","components": {"minecraft:max_damage": 3048},
-      "conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"mainhand": {"predicates": {"minecraft:enchantments": [{"enchantments": "ench_plus:handle/held_blaze"}]}}}}}]
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "ench_plus:handle/held_gold"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 3051
     },
-    {
-      "function": "minecraft:set_components","components": {"minecraft:max_damage": 3556},
-      "conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"mainhand": {"predicates": {"minecraft:enchantments": [{"enchantments": "ench_plus:handle/held_netherite"}]}}}}}]
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "ench_plus:handle/held_blaze"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_damage": 4068
     },
-    {
-      "function": "minecraft:set_enchantments","enchantments": {"ench_plus:handle/upgrade": 0},
-      "conditions": [{"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"mainhand": {"items": "#ench_plus:netherite"}}}}]
-    }
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "ench_plus:handle/held_netherite"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "ench_plus:handle/upgrade": 0
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "items": "#ench_plus:netherite"
+            }
+          }
+        }
+      }
+    ]
+  }
 ]

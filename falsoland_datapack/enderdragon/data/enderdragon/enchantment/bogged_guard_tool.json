@@ -1,0 +1,44 @@
+{
+  "anvil_cost": 4,
+  "description": "enderdragon - bogged_guard_tool",
+  "effects": {
+    "minecraft:prevent_equipment_drop": {},
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enderdragon:bogged_guard/charge/run_charge"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:time_check",
+          "value": 1,
+          "period": 30
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "enderdragon:bogged_guard/aggro/run_aggro"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 25
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 25
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "minecraft:debug_stick",
+  "weight": 2
+}

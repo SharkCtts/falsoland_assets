@@ -1,0 +1,2 @@
+execute in minecraft:the_end positioned ~ 62 ~ run particle trail{color:[0.710,0.000,0.498],target:[0,64,0],duration:20} ~ ~ ~ 0.1 0.1 0.1 1 8 normal
+execute in minecraft:the_end positioned ~ 62 ~ run particle trail{color:[0.663,0.184,0.980],target:[0,64,0],duration:20} ~ ~ ~ 0.1 0.1 0.1 1 8 normal
