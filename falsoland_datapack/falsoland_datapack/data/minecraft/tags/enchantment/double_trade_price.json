@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "values": [
      "minecraft:channeling",
      "minecraft:feather_falling",

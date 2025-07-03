@@ -2,104 +2,60 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:nether_gold_ore",
               "conditions": [
                 {
-                  "condition": "minecraft:reference",
-                  "name": "ench_plus:tools/silk_touch"
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
+                        }
+                      ]
+                    }
+                  }
                 }
-              ]
+              ],
+              "name": "minecraft:nether_gold_ore"
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:gold_ingot",
-              "conditions": [
-                {
-                  "condition": "minecraft:reference",
-                  "name": "ench_plus:tools/magma_hit"
-                }
-              ]
-            },
-            {
-              "type": "minecraft:loot_table",
-              "name": "",
-              "value": "ench_plus:tool/jackpot/nether_gold_ore",
-              "conditions": [
-                {
-                  "condition": "minecraft:reference",
-                  "name": "ench_plus:tools/jackpot"
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:gold_nugget",
               "functions": [
                 {
-                  "function": "minecraft:set_count",
+                  "add": false,
                   "count": {
-                    "min": 1,
-                    "max": 4
+                    "type": "minecraft:uniform",
+                    "max": 6.0,
+                    "min": 2.0
                   },
-                  "add": true
+                  "function": "minecraft:set_count"
                 },
                 {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 0,
-                    "max": 6
-                  },
-                  "add": true,
-                  "conditions": [
-                    {
-                      "condition": "minecraft:match_tool",
-                      "predicate": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "ench_plus:rule_base/tool/fortune"
-                            }
-                          ]
-                        }
-                      }
-                    }
-                  ]
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops",
+                  "function": "minecraft:apply_bonus"
                 },
                 {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 0,
-                    "max": 18
-                  },
-                  "add": true,
-                  "conditions": [
-                    {
-                      "condition": "minecraft:match_tool",
-                      "predicate": {
-                        "predicates": {
-                          "minecraft:enchantments": [
-                            {
-                              "enchantments": "ench_plus:rule_plus/tool/fortune"
-                            }
-                          ]
-                        }
-                      }
-                    }
-                  ]
+                  "function": "minecraft:explosion_decay"
                 }
-              ]
+              ],
+              "name": "minecraft:gold_nugget"
             }
           ]
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "minecraft:blocks/nether_gold_ore"
 }

@@ -1,6 +1,8 @@
 {
+  "replace": true,
   "values": [
     "ench_plus:rule_base/tool/silk_touch",
-    "ench_plus:rule_plus/tool/silk_touch"
+    "ench_plus:rule_plus/tool/silk_touch",
+	"minecraft:silk_touch"
   ]
 }

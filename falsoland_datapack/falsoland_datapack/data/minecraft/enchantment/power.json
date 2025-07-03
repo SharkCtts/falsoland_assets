@@ -36,6 +36,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/debug_disabled",
+  "supported_items": "#minecraft:enchantable/bow",
   "weight": 10
 }

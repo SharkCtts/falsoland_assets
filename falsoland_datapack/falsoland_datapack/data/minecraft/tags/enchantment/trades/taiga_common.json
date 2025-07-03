@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:soul_speed",
+    "minecraft:depth_strider",
+    "ench_plus:armor/gravity_boots"
+  ]
+}

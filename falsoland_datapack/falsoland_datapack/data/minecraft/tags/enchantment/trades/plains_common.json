@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:blast_protection",
+    "minecraft:respiration",
+    "ench_plus:armor/breeze_shield"
+  ]
+}

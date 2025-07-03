@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "values": [
     "minecraft:binding_curse",
     "minecraft:vanishing_curse",
@@ -42,6 +43,7 @@
     "minecraft:unbreaking",
     "minecraft:infinity",
     "minecraft:mending",
+    "ench_plus:handle/update",
     "ench_plus:handle/upgrade",
     "ench_plus:handle/held_none",
     "ench_plus:handle/held_leather",

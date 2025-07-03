@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "ench_plus:armor/warlock_shield",
+    "minecraft:density",
+    "minecraft:breach"
+  ]
+}
