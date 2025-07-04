@@ -263,5 +263,14 @@
         "attenuation_distance": 64
       }
     ]
+  },
+  "music_disc.through_the_fire_and_flames": {
+    "sounds": [
+      {
+        "name": "music_disc/through_the_fire_and_flames",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
   }
 }
