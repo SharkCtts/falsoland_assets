@@ -263,5 +263,14 @@
         "attenuation_distance": 64
       }
     ]
+  },
+  "music_disc.color_your_night": {
+    "sounds": [
+      {
+        "name": "music_disc/color_your_night",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
   }
 }
