@@ -1,5 +1,5 @@
 {
-    "parent":"item/handheld",
+    "parent":"item/crossbow",
     "textures": {
         "layer0": "item/weapon_held/crossbow_with_rocket"
     }

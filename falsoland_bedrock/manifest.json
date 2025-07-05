@@ -3,8 +3,8 @@
     "header": {
         "description": "Resource Pack hecho para Falsoland",
         "name": "FalsolandResourcePack",
-        "uuid": "ccb44b1a-7548-4d1e-8e53-5568a3436fc2",
-        "version": [1, 2, 1002],
+        "uuid": "ccb44b1a-7548-4d1e-8e53-5568a3435fb5",
+        "version": [1, 1, 0],
         "min_engine_version": [ 1, 16, 0 ]
     },
     "modules": [

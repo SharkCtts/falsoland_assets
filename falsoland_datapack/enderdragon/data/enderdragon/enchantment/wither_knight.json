@@ -24,19 +24,6 @@
           "type": "minecraft:run_function",
           "function": "enderdragon:wither_knight/aggro/run_aggro"
         }
-      },
-      {
-        "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "periodic_tick": 1200
-          }
-        },
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "enderdragon:wither_knight/limit/run_check"
-        }
       }
     ]
   },

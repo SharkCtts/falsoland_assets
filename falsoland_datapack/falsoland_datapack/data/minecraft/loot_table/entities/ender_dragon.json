@@ -8,6 +8,15 @@
           "type": "minecraft:loot_table",
           "value": "enderdragon:entity/ender_dragon"
         }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Health:0.0f}"
+          }
+        }
       ]
     }
   ],

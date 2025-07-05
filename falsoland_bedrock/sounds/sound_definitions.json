@@ -1,280 +1,285 @@
 {
-   "format_version":"1.20.20",
-   "sound_definitions":{
-      "enchant.ambush_on":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/ambush_on"
-            }
-         ]
-      },
-      "enchant.ambush_off":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/ambush_off"
-            }
-         ]
-      },
-      "enchant.chainreac_to":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/chainreac_to"
-            }
-         ]
-      },
-      "enchant.chainreac_by":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/chainreac_by"
-            }
-         ]
-      },
-      "enchant.weakpoint_on":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/weakpoint_on"
-            }
-         ]
-      },
-      "enchant.weakpoint_off":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/weakpoint_off"
-            }
-         ]
-      },
-      "enchant.anger_mode":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/anger_mode"
-            }
-         ]
-      },
-      "enchant.soul_breaker":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/soul_breaker_cast"
-            }
-         ]
-      },
-      "enchant.fracture_spawn":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/fracture_spawn"
-            }
-         ]
-      },
-      "enchant.burst_on":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/burst_enable"
-            }
-         ]
-      },
-      "enchant.burst_off":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/burst_disable"
-            }
-         ]
-      },
-      "enchant.command_used":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/command_1"
-            },
-            {
-               "name":"sounds/ench_plus/command_2"
-            },
-            {
-               "name":"sounds/ench_plus/command_3"
-            }
-         ]
-      },
-      "enchant.gunpowder_warn":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/gunpowder_ignited"
-            }
-         ]
-      },
-      "enchant.radiant.heal":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/radiant_heal"
-            }
-         ]
-      },
-      "enchant.radiant.crash":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/radiant_crash"
-            }
-         ]
-      },
-      "enchant.radiant.search":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/radiant_search_01"
-            },
-            {
-               "name":"sounds/ench_plus/radiant_search_01"
-            }
-         ]
-      },
-      "enchant.ricochet":{
-         "category":"player",
-         "max_distance":16,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/ench_plus/ricochet_1"
-            },
-            {
-               "name":"sounds/ench_plus/ricochet_2"
-            },
-            {
-               "name":"sounds/ench_plus/ricochet_3"
-            }
-         ]
-      },
-      "music_disc.left_alone":{
-         "category":"record",
-         "max_distance":64,
-         "min_distance":null,
-         "sounds":[
-            {
-               "name":"sounds/music_disc/left_alone",
-               "stream":true
-            }
-         ]
-      },
-      "music_disc.never_fade_away":{
-         "__use_legacy_max_distance":"true",
-         "category":"record",
-         "max_distance":64,
-         "min_distance":null,
-         "sounds":[
-            {
-               "load_on_low_memory":true,
-               "name":"sounds/music_disc/never_fade_away",
-               "stream":true
-            }
-         ]
-      },
-      "music_disc.quiet_and_falling":{
-         "__use_legacy_max_distance":"true",
-         "category":"record",
-         "max_distance":64,
-         "min_distance":null,
-         "sounds":[
-            {
-               "load_on_low_memory":true,
-               "name":"sounds/music_disc/quiet_and_falling",
-               "stream":true
-            }
-         ]
-      },
-      "music_disc.the_deserving":{
-         "__use_legacy_max_distance":"true",
-         "category":"record",
-         "max_distance":64,
-         "min_distance":null,
-         "sounds":[
-            {
-               "load_on_low_memory":true,
-               "name":"sounds/music_disc/the_deserving",
-               "stream":true
-            }
-         ]
-      },
-      "music_disc.theme_of_the_lantern_festival_lofi":{
-         "__use_legacy_max_distance":"true",
-         "category":"record",
-         "max_distance":64,
-         "min_distance":null,
-         "sounds":[
-            {
-               "load_on_low_memory":true,
-               "name":"sounds/music_disc/theme_of_the_lantern_festival_lofi",
-               "stream":true
-            }
-         ]
-      },
-      "lobby.random_music":{
-         "category":"music",
-         "max_distance":null,
-         "min_distance":null,
-         "sounds":[
-            {
-               "load_on_low_memory":true,
-               "name":"sounds/music_lobby/0",
-               "stream":true
-            },
-            {
-               "load_on_low_memory":true,
-               "name":"sounds/music_lobby/dalarna",
-               "stream":true
-            },
-            {
-               "load_on_low_memory":true,
-               "name":"sounds/music_lobby/halland",
-               "stream":true
-            },
-            {
-               "load_on_low_memory":true,
-               "name":"sounds/music_lobby/waterlust",
-               "stream":true
-            }
-         ]
+  "enchant.ambush_on": {
+    "subtitle": "enchant.ambush_on",
+    "sounds": [
+      {
+        "name": "ench_plus/ambush_on",
+        "attenuation_distance": 16
       }
-   }
+    ]
+  },
+  "enchant.ambush_off": {
+    "subtitle": "enchant.ambush_off",
+    "sounds": [
+      {
+        "name": "ench_plus/ambush_off",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.chainreac_to": {
+    "subtitle": "enchant.chainreact_to",
+    "sounds": [
+      {
+        "name": "ench_plus/chainreac_to",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.chainreac_by": {
+    "subtitle": "enchant.chainreac_by",
+    "sounds": [
+      {
+        "name": "ench_plus/chainreac_by",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.weakpoint_on": {
+    "subtitle": "enchant.weakpoint_on",
+    "sounds": [
+      {
+        "name": "ench_plus/weakpoint_on",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.weakpoint_off": {
+    "subtitle": "enchant.weakpoint_off",
+    "sounds": [
+      {
+        "name": "ench_plus/weakpoint_off",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.anger_mode": {
+    "subtitle": "enchant.anger_mode",
+    "sounds": [
+      {
+        "name": "ench_plus/anger_mode",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.soul_breaker": {
+    "subtitle": "enchant.soul_breaker",
+    "sounds": [
+      {
+        "name": "ench_plus/soul_breaker_cast",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.fracture_spawn": {
+    "subtitle": "enchant.fracture_spawn",
+    "sounds": [
+      {
+        "name": "ench_plus/fracture_spawn",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.burst_on": {
+    "subtitle": "enchant.burst_on",
+    "sounds": [
+      {
+        "name": "ench_plus/burst_enable",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.burst_off": {
+    "subtitle": "enchant.burst_off",
+    "sounds": [
+      {
+        "name": "ench_plus/burst_disable",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.command_used": {
+    "subtitle": "enchant.command_used",
+    "sounds": [
+      {
+        "name": "ench_plus/command_1",
+        "attenuation_distance": 16
+      },
+      {
+        "name": "ench_plus/command_2",
+        "attenuation_distance": 16
+      },
+      {
+        "name": "ench_plus/command_3",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.gunpowder_warn": {
+    "subtitle": "enchant.gunpowder_warn",
+    "sounds": [
+      {
+        "name": "ench_plus/gunpowder_ignited",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.radiant.heal": {
+    "subtitle": "enchant.radiant_heal",
+    "sounds": [
+      {
+        "name": "ench_plus/radiant_heal",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.radiant.crash": {
+    "subtitle": "enchant.radiant_crash",
+    "sounds": [
+      {
+        "name": "ench_plus/radiant_crash",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.radiant.search": {
+    "subtitle": "enchant.radiant_search",
+    "sounds": [
+      {
+        "name": "ench_plus/radiant_search_01",
+        "attenuation_distance": 16
+      },
+      {
+        "name": "ench_plus/radiant_search_01",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "enchant.ricochet": {
+    "subtitle": "enchant.ricochet_hit",
+    "sounds": [
+      {
+        "name": "ench_plus/ricochet_1",
+        "attenuation_distance": 16
+      },
+      {
+        "name": "ench_plus/ricochet_2",
+        "attenuation_distance": 16
+      },
+      {
+        "name": "ench_plus/ricochet_3",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "lobby.random_music": {
+    "sounds": [
+      {
+        "name": "music_lobby/0",
+        "stream": true
+      },
+      {
+        "name": "music_lobby/dalarna",
+        "stream": true
+      },
+      {
+        "name": "music_lobby/halland",
+        "stream": true
+      },
+      {
+        "name": "music_lobby/waterlust",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.left_alone": {
+    "sounds": [
+      {
+        "name": "music_disc/left_alone",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "music_disc.never_fade_away": {
+    "sounds": [
+      {
+        "name": "music_disc/never_fade_away",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "music_disc.quiet_and_falling": {
+    "sounds": [
+      {
+        "name": "music_disc/quiet_and_falling",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "music_disc.the_deserving": {
+    "sounds": [
+      {
+        "name": "music_disc/the_deserving",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "music_disc.theme_of_the_lantern_festival_lofi": {
+    "sounds": [
+      {
+        "name": "music_disc/theme_of_the_lantern_festival_lofi",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "music_disc.hello_sekai": {
+    "sounds": [
+      {
+        "name": "music_disc/hello_sekai",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "music_disc.hello_sekai_vocaloid": {
+    "sounds": [
+      {
+        "name": "music_disc/hello_sekai_event",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "music_disc.roar_of_the_jungle_dragon": {
+    "sounds": [
+      {
+        "name": "music_disc/roar_of_the_jungle_dragon",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "music_disc.through_the_fire_and_flames": {
+    "sounds": [
+      {
+        "name": "music_disc/through_the_fire_and_flames",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "music_disc.color_your_night": {
+    "sounds": [
+      {
+        "name": "music_disc/color_your_night",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
+  }
 }
