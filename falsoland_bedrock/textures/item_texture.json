@@ -576,6 +576,9 @@
     },
     "netherite_crossbow": {
       "textures": "textures/items/crossbow/netherite_crossbow_standby"
+    },
+	"custom_music_disc": {
+      "textures": "textures/items/added_item/music_disc"
     }
   }
 }
