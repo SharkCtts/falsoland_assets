@@ -4,7 +4,7 @@
 		"0": "block/redstone_block",
 		"particle": "block/redstone_block"
 	},
-	[
+	"elements": [
 		{
 			"from": [-14, -12.1, 15],
 			"to": [-9.1, -7.2, 15],

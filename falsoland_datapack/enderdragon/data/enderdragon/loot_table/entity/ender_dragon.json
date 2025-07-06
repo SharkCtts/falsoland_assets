@@ -3,71 +3,154 @@
   "pools": [
     {
       "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:elytra",
+          "name": "minecraft:shulker_box",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:damage": 0,
-                "minecraft:max_damage": 400,
-                "minecraft:custom_name": {
-                  "text": "Elytra reforzada",
-                  "italic": false
+                "minecraft:item_name": {
+                  "text": "BOTÍN DEL DRAGÓN"
                 },
-                "minecraft:unbreakable": {},
-                "minecraft:rarity": "epic"
+                "minecraft:damage_resistant": {
+                  "types": "#minecraft:is_fire"
+                }
               }
             },
             {
-              "function": "minecraft:enchant_randomly",
-              "options": "minecraft:protection",
-              "only_compatible": false
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
+              "function": "minecraft:set_contents",
+              "component": "minecraft:container",
+              "entries": [
                 {
-                  "attribute": "minecraft:armor",
-                  "id": "enderdragon:armor",
-                  "amount": {
-                    "min": 1,
-                    "max": 8
-                  },
-                  "operation": "add_value",
-                  "slot": "chest"
+                  "type": "minecraft:item",
+                  "name": "minecraft:elytra",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_components",
+                      "components": {
+                        "minecraft:item_name": {
+                          "text": "Elytras del dragón"
+                        },
+                        "minecraft:rarity": "epic",
+                        "minecraft:equippable": {
+                          "slot": "chest",
+                          "asset_id": "minecraft:elytra/dragon_elytra",
+                          "allowed_entities": "minecraft:player",
+                          "dispensable": true,
+                          "swappable": true,
+                          "damage_on_hurt": false,
+                          "equip_on_interact": true
+                        },
+                        "minecraft:damage_resistant": {
+                          "types": "#minecraft:is_fire"
+                        },
+                        "minecraft:unbreakable": {},
+                        "minecraft:item_model": "minecraft:feature_item/item/dragon_elytra"
+                      }
+                    },
+                    {
+                      "function": "minecraft:set_attributes",
+                      "modifiers": [
+                        {
+                          "attribute": "minecraft:armor",
+                          "id": "enderdragon:armor",
+                          "amount": {
+                            "min": 1,
+                            "max": 8
+                          },
+                          "operation": "add_value",
+                          "slot": "chest"
+                        },
+                        {
+                          "attribute": "minecraft:armor_toughness",
+                          "id": "enderdragon:armor_toughness",
+                          "amount": 3,
+                          "operation": "add_value",
+                          "slot": "chest"
+                        }
+                      ]
+                    },
+                    {
+                      "function": "minecraft:enchant_randomly",
+                      "options": "minecraft:protection",
+                      "only_compatible": false
+                    }
+                  ]
                 },
                 {
-                  "attribute": "minecraft:armor_toughness",
-                  "id": "enderdragon:armor_toughness",
-                  "amount": 3,
-                  "operation": "add_value",
-                  "slot": "chest"
+                  "type": "minecraft:item",
+                  "name": "chest",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_contents",
+                      "component": "minecraft:container",
+                      "entries": [
+                        {
+                          "type": "minecraft:loot_table",
+                          "value": "minecraft:chests/end_city_treasure"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "chest",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_contents",
+                      "component": "minecraft:container",
+                      "entries": [
+                        {
+                          "type": "minecraft:loot_table",
+                          "value": "minecraft:chests/end_city_treasure"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "chest",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_contents",
+                      "component": "minecraft:container",
+                      "entries": [
+                        {
+                          "type": "minecraft:loot_table",
+                          "value": "minecraft:chests/end_city_treasure"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "chest",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_contents",
+                      "component": "minecraft:container",
+                      "entries": [
+                        {
+                          "type": "minecraft:loot_table",
+                          "value": "minecraft:chests/end_city_treasure"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:loot_table",
+                  "value": "custom:jukebox_song/roar_of_the_jungle_dragon"
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "rolls": 8,
-      "bonus_rolls": 0,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "value": "minecraft:chests/end_city_treasure"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "value": "custom:jukebox_song/roar_of_the_jungle_dragon"
         }
       ]
     }
