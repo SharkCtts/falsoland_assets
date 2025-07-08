@@ -299,5 +299,14 @@
         "attenuation_distance": 64
       }
     ]
+  },
+  "music_disc.burning_desires": {
+    "sounds": [
+      {
+        "name": "music_disc/burning_desires",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
   }
 }

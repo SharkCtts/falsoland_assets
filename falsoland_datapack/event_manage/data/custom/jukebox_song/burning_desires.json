@@ -1,0 +1,10 @@
+{
+    "comparator_output": 15,
+    "description": {
+        "text": "Roar of the Jungle Dragon - Por [DM DOKURO]"
+    },
+    "length_in_seconds": 139.0,
+    "sound_event": {
+		"sound_id": "minecraft:music_disc.burning_desires"
+	}
+}
