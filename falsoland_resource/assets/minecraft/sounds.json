@@ -281,5 +281,23 @@
         "attenuation_distance": 64
       }
     ]
+  },
+  "music_disc.silver_lights": {
+    "sounds": [
+      {
+        "name": "music_disc/silver_lights",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "music_disc.twisted_garden": {
+    "sounds": [
+      {
+        "name": "music_disc/twisted_garden",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
   }
 }
