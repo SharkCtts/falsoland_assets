@@ -340,6 +340,19 @@
           "stream": true
         }
       ]
+    },
+    "music_disc.burning_desires": {
+      "__use_legacy_max_distance": "true",
+      "category": "record",
+      "max_distance": 64,
+      "min_distance": null,
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music_disc/burning_desires",
+          "stream": true
+        }
+      ]
     }
   }
 }
